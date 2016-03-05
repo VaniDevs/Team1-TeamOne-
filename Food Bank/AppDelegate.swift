@@ -7,16 +7,16 @@
 //
 
 import UIKit
+import CoreLocation
 import Parse
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var locationManager: CLLocationManager?
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
         
         Parse.setApplicationId("tfCwCLinksL1FN39XOm7vJyF54px9if6ZPTLEWg3", clientKey: "zJGAAurjBdAn86aFqactQ1yonZoIm73jQvhL4LUE")
 
@@ -24,6 +24,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         application.registerUserNotificationSettings(settings)
         application.registerForRemoteNotifications()
         
+        locationManager = CLLocationManager()
+        locationManager?.requestWhenInUseAuthorization()
+
         return true
     }
 

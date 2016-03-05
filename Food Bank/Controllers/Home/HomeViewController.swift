@@ -10,11 +10,31 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
+    @IBOutlet weak var collectionView: UICollectionView!
+    
+    let images = [UIImage(named: "pasta-rice"), UIImage(named: "canned-beans"), UIImage(named: "canned-fish-meat"),
+                  UIImage(named: "canned-fruit"), UIImage(named: "canned-vegetables"), UIImage(named: "cereal"),
+                  UIImage(named: "nut-butters"), UIImage(named: "pasta-sauces"), UIImage(named: "stew")]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         title = "Home"
+        
+        collectionView.dataSource = self;
     }
-
    
 }
+
+extension HomeViewController : UICollectionViewDataSource {
+    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return images.count;
+    }
+    
+    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier("CircularImageCell", forIndexPath: indexPath) as! CircularImageCell
+        cell.imageView.image = images[indexPath.row]
+        return cell
+    }
+}
+
