@@ -64,12 +64,21 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
             view = MKPinAnnotationView(annotation: annotation, reuseIdentifier: "pin")
             view.canShowCallout = true
             view.calloutOffset = CGPoint(x: -5, y: 5)
-            view.rightCalloutAccessoryView = UIButton(type: .DetailDisclosure) as UIView
+            let detailButton = UIButton(type: .DetailDisclosure)
+            detailButton.addTarget(self, action: "mapPinDetailedButtonClicked:", forControlEvents: UIControlEvents.TouchUpInside)
+            view.rightCalloutAccessoryView = detailButton as UIView
             
             return view
         }
         
         return nil
+    }
+    
+    func mapPinDetailedButtonClicked(sender:UIButton!) {
+        if let vc = storyboard?.instantiateViewControllerWithIdentifier("StoreLocationDetailTableView") {
+            navigationController?.pushViewController(vc, animated: true)
+        }
+        
     }
     
 }

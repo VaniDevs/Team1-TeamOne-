@@ -25,13 +25,45 @@ class StoreLocationDetailTableViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let index = indexPath.row
+        let cellIdentifier = cellIdentifierList[index]
         
-        switch index {
-        case 0:
-            var cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifierList[index], forIndexPath: indexPath)
+        switch cellIdentifier {
+        case "mapCell":
+            var cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath) as! MapTableViewCell
             return cell
+            
+        case "directionCell":
+            var cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath)
+            return cell
+            
+        case "phoneCell":
+            var cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath)
+            return cell
+            
+        case "hoursCell":
+            var cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath)
+            return cell
+            
         default:
             return UITableViewCell()
+        }
+    }
+    
+    override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        let index = indexPath.row
+        let cellIdentifier = cellIdentifierList[index]
+        
+        switch cellIdentifier {
+        case "mapCell":
+            return 250.0
+        case "directionCell":
+            return 100.0
+        case "phoneCell":
+            return 70.0
+        case "hoursCell":
+            return 210.0
+        default:
+            return 0
         }
     }
 }
