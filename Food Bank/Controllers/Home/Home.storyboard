@@ -32,13 +32,34 @@
                     <view key="view" contentMode="scaleToFill" id="Ju9-FI-otg">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iKJ-uO-AKX">
+                                <rect key="frame" x="282.5" y="76" width="35" height="30"/>
+                                <state key="normal" title="Scan"/>
+                                <connections>
+                                    <segue destination="cZb-b0-hbJ" kind="show" id="OTm-Qc-8Hm"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="iKJ-uO-AKX" firstAttribute="centerX" secondItem="Ju9-FI-otg" secondAttribute="centerX" id="KZ5-K5-T9g"/>
+                            <constraint firstItem="iKJ-uO-AKX" firstAttribute="top" secondItem="NKN-a3-LmB" secondAttribute="bottom" constant="12" id="wwG-fv-1ng"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="q8y-9z-Ymv"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K99-T2-pNU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="99" y="410"/>
+        </scene>
+        <!--Identifier-->
+        <scene sceneID="kM2-HB-Sx3">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Identifier" id="cZb-b0-hbJ" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GRY-KB-mA6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="633.5" y="188"/>
         </scene>
     </scenes>
 </document>

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1A7D94CF8083321C122B6587 /* Pods_Food_Bank.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDA8C754DDE33AF7B34E2D28 /* Pods_Food_Bank.framework */; };
+		5170E6B71C8B625200F9CDCF /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5170E6B61C8B625200F9CDCF /* ResultViewController.swift */; };
 		51D55E531C8B54290068EDBC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D55E521C8B54290068EDBC /* AppDelegate.swift */; };
 		51D55E5A1C8B54290068EDBC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51D55E581C8B54290068EDBC /* Main.storyboard */; };
 		51D55E5C1C8B54290068EDBC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51D55E5B1C8B54290068EDBC /* Assets.xcassets */; };
@@ -38,6 +39,7 @@
 
 /* Begin PBXFileReference section */
 		1171D189DD7B3E1D562CB476 /* Pods-Food Bank.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Food Bank.release.xcconfig"; path = "Pods/Target Support Files/Pods-Food Bank/Pods-Food Bank.release.xcconfig"; sourceTree = "<group>"; };
+		5170E6B61C8B625200F9CDCF /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		51D55E4F1C8B54290068EDBC /* Food Bank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Food Bank.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		51D55E521C8B54290068EDBC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		51D55E591C8B54290068EDBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -82,6 +84,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5170E6B51C8B624600F9CDCF /* Result */ = {
+			isa = PBXGroup;
+			children = (
+				5170E6B61C8B625200F9CDCF /* ResultViewController.swift */,
+			);
+			path = Result;
+			sourceTree = "<group>";
+		};
 		51D55E461C8B54290068EDBC = {
 			isa = PBXGroup;
 			children = (
@@ -161,6 +171,7 @@
 		51D55E771C8B55C20068EDBC /* Identifier */ = {
 			isa = PBXGroup;
 			children = (
+				5170E6B51C8B624600F9CDCF /* Result */,
 				51F0F91C1C8B59A8003F0398 /* Identifier.storyboard */,
 				51F0F92A1C8B5C83003F0398 /* IdentifierViewController.swift */,
 			);
@@ -276,6 +287,12 @@
 				TargetAttributes = {
 					51D55E4E1C8B54290068EDBC = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = HWAPNMZU3Y;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 					51D55E641C8B54290068EDBC = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -382,6 +399,7 @@
 			files = (
 				51D55E531C8B54290068EDBC /* AppDelegate.swift in Sources */,
 				51F0F92B1C8B5C83003F0398 /* IdentifierViewController.swift in Sources */,
+				5170E6B71C8B625200F9CDCF /* ResultViewController.swift in Sources */,
 				51F0F9251C8B5C2C003F0398 /* MapViewController.swift in Sources */,
 				51F0F9291C8B5C3E003F0398 /* CouponViewController.swift in Sources */,
 				51F0F9271C8B5C36003F0398 /* ProfileViewController.swift in Sources */,
