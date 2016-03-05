@@ -32,7 +32,7 @@ class StoreLocationDetailTableViewController: UITableViewController {
         switch cellIdentifier {
         case "mapCell":
             let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath) as! MapTableViewCell
-            cell.configurate(storeMapPin)
+            cell.configure(storeMapPin)
             return cell
             
         case "directionCell":
