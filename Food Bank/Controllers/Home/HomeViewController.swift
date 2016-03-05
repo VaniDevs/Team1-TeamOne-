@@ -18,15 +18,13 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        title = "Home"
-        
-        collectionView.dataSource = self;
+        collectionView.delegate = self
+        collectionView.dataSource = self
     }
    
 }
 
-extension HomeViewController : UICollectionViewDataSource {
+extension HomeViewController: UICollectionViewDataSource {
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return images.count;
     }
@@ -35,6 +33,12 @@ extension HomeViewController : UICollectionViewDataSource {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier("CircularImageCell", forIndexPath: indexPath) as! CircularImageCell
         cell.imageView.image = images[indexPath.row]
         return cell
+    }
+}
+
+extension HomeViewController: UICollectionViewDelegate {
+    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        print("asdf")
     }
 }
 

@@ -24,11 +24,11 @@
 		51F0F9271C8B5C36003F0398 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F0F9261C8B5C36003F0398 /* ProfileViewController.swift */; };
 		51F0F9291C8B5C3E003F0398 /* CouponViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F0F9281C8B5C3E003F0398 /* CouponViewController.swift */; };
 		51F0F92B1C8B5C83003F0398 /* IdentifierViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F0F92A1C8B5C83003F0398 /* IdentifierViewController.swift */; };
+		5691D9641C8B65290023A62F /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5691D9631C8B65290023A62F /* CoreLocation.framework */; };
+		5691D9661C8B6CF10023A62F /* MapPin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5691D9651C8B6CF10023A62F /* MapPin.swift */; };
 		CE8F0A7F1C8B6726004C5A19 /* CircularImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8F0A7E1C8B6726004C5A19 /* CircularImageView.swift */; };
 		CE8F0A841C8B6B99004C5A19 /* CircleLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8F0A831C8B6B99004C5A19 /* CircleLayout.m */; };
 		CE8F0A8A1C8B7189004C5A19 /* CircularImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8F0A891C8B7189004C5A19 /* CircularImageCell.swift */; };
-		5691D9641C8B65290023A62F /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5691D9631C8B65290023A62F /* CoreLocation.framework */; };
-		5691D9661C8B6CF10023A62F /* MapPin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5691D9651C8B6CF10023A62F /* MapPin.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,7 +80,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				5691D9641C8B65290023A62F /* CoreLocation.framework in Frameworks */,
-				51F0F9231C8B5C14003F0398 /* MapKit.framework in Frameworks */,
 				1A7D94CF8083321C122B6587 /* Pods_Food_Bank.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
