@@ -24,14 +24,13 @@
 		51F0F91B1C8B59A1003F0398 /* Map.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51F0F91A1C8B59A1003F0398 /* Map.storyboard */; };
 		51F0F91D1C8B59A8003F0398 /* Identifier.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51F0F91C1C8B59A8003F0398 /* Identifier.storyboard */; };
 		51F0F9211C8B5B0F003F0398 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F0F9201C8B5B0F003F0398 /* HomeViewController.swift */; };
-		51F0F9251C8B5C2C003F0398 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F0F9241C8B5C2C003F0398 /* MapViewController.swift */; };
 		51F0F9271C8B5C36003F0398 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F0F9261C8B5C36003F0398 /* ProfileViewController.swift */; };
 		51F0F92B1C8B5C83003F0398 /* IdentifierViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F0F92A1C8B5C83003F0398 /* IdentifierViewController.swift */; };
+		5691D9641C8B65290023A62F /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5691D9631C8B65290023A62F /* CoreLocation.framework */; };
+		5691D9661C8B6CF10023A62F /* MapPin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5691D9651C8B6CF10023A62F /* MapPin.swift */; };
 		CE8F0A7F1C8B6726004C5A19 /* CircularImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8F0A7E1C8B6726004C5A19 /* CircularImageView.swift */; };
 		CE8F0A841C8B6B99004C5A19 /* CircleLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8F0A831C8B6B99004C5A19 /* CircleLayout.m */; };
 		CE8F0A8A1C8B7189004C5A19 /* CircularImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8F0A891C8B7189004C5A19 /* CircularImageCell.swift */; };
-		5691D9641C8B65290023A62F /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5691D9631C8B65290023A62F /* CoreLocation.framework */; };
-		5691D9661C8B6CF10023A62F /* MapPin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5691D9651C8B6CF10023A62F /* MapPin.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,7 +85,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				5691D9641C8B65290023A62F /* CoreLocation.framework in Frameworks */,
-				51F0F9231C8B5C14003F0398 /* MapKit.framework in Frameworks */,
 				1A7D94CF8083321C122B6587 /* Pods_Food_Bank.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,7 +268,6 @@
 		EFF4BD0EB99639CB11348BB0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				51F0F9221C8B5C14003F0398 /* MapKit.framework */,
 				5691D9631C8B65290023A62F /* CoreLocation.framework */,
 				EDA8C754DDE33AF7B34E2D28 /* Pods_Food_Bank.framework */,
 			);
@@ -449,11 +446,8 @@
 				51F0F92B1C8B5C83003F0398 /* IdentifierViewController.swift in Sources */,
 				5170E6B71C8B625200F9CDCF /* ResultViewController.swift in Sources */,
 				5170E6B91C8B665200F9CDCF /* APIClient.swift in Sources */,
-				51F0F9251C8B5C2C003F0398 /* MapViewController.swift in Sources */,
 				5691D9661C8B6CF10023A62F /* MapPin.swift in Sources */,
-				51F0F9251C8B5C2C003F0398 /* MapViewController.swift in Sources */,
 				CE8F0A8A1C8B7189004C5A19 /* CircularImageCell.swift in Sources */,
-				51F0F9291C8B5C3E003F0398 /* CouponViewController.swift in Sources */,
 				CE8F0A841C8B6B99004C5A19 /* CircleLayout.m in Sources */,
 				CE8F0A7F1C8B6726004C5A19 /* CircularImageView.swift in Sources */,
 				51F0F9271C8B5C36003F0398 /* ProfileViewController.swift in Sources */,
@@ -588,8 +582,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				ENABLE_BITCODE = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = "Food Bank/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.team1.Food-Bank";
@@ -607,8 +601,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				ENABLE_BITCODE = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = "Food Bank/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.team1.Food-Bank";
