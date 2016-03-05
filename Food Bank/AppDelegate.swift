@@ -19,9 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         Parse.setApplicationId("tfCwCLinksL1FN39XOm7vJyF54px9if6ZPTLEWg3", clientKey: "zJGAAurjBdAn86aFqactQ1yonZoIm73jQvhL4LUE")
-        let testObject = PFObject(className: "sample")
-        testObject["foo"] = "bar"
-        testObject.saveInBackground()
+
         let settings = UIUserNotificationSettings(forTypes: [.Alert, .Badge, .Sound], categories: nil)
         application.registerUserNotificationSettings(settings)
         application.registerForRemoteNotifications()
