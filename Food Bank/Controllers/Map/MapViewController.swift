@@ -11,7 +11,7 @@ import MapKit
 
 class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
     
-    @IBOutlet var storeLocationMKMapView: MKMapView!
+    @IBOutlet var storeLocationMapView: MKMapView!
     
     let addressBook = [
         "370 E Broadway, Vancouver",
@@ -29,7 +29,7 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
             longitude: -123.12
         )
         let span = MKCoordinateSpanMake(0.5, 0.5)
-        storeLocationMKMapView.setRegion(MKCoordinateRegion(center: initLocation, span: span), animated: true)
+        storeLocationMapView.setRegion(MKCoordinateRegion(center: initLocation, span: span), animated: true)
         
     }
     
@@ -48,7 +48,7 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
                     let storeLocationPin = MapPin(myCoordinate: coordinate!)
                     storeLocationPin.title = placemark.name
                     storeLocationPin.address = placemark.addressDictionary?.description
-                    self.storeLocationMKMapView.addAnnotation(storeLocationPin)
+                    self.storeLocationMapView.addAnnotation(storeLocationPin)
                 }
             })
         }
