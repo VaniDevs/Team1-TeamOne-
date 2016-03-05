@@ -20,11 +20,13 @@
 		51F0F91D1C8B59A8003F0398 /* Identifier.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51F0F91C1C8B59A8003F0398 /* Identifier.storyboard */; };
 		51F0F91F1C8B59B5003F0398 /* Coupon.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51F0F91E1C8B59B5003F0398 /* Coupon.storyboard */; };
 		51F0F9211C8B5B0F003F0398 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F0F9201C8B5B0F003F0398 /* HomeViewController.swift */; };
-		51F0F9231C8B5C14003F0398 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51F0F9221C8B5C14003F0398 /* MapKit.framework */; };
 		51F0F9251C8B5C2C003F0398 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F0F9241C8B5C2C003F0398 /* MapViewController.swift */; };
 		51F0F9271C8B5C36003F0398 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F0F9261C8B5C36003F0398 /* ProfileViewController.swift */; };
 		51F0F9291C8B5C3E003F0398 /* CouponViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F0F9281C8B5C3E003F0398 /* CouponViewController.swift */; };
 		51F0F92B1C8B5C83003F0398 /* IdentifierViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F0F92A1C8B5C83003F0398 /* IdentifierViewController.swift */; };
+		CE8F0A7F1C8B6726004C5A19 /* CircularImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8F0A7E1C8B6726004C5A19 /* CircularImageView.swift */; };
+		CE8F0A841C8B6B99004C5A19 /* CircleLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8F0A831C8B6B99004C5A19 /* CircleLayout.m */; };
+		CE8F0A8A1C8B7189004C5A19 /* CircularImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8F0A891C8B7189004C5A19 /* CircularImageCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,12 +57,16 @@
 		51F0F91C1C8B59A8003F0398 /* Identifier.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Identifier.storyboard; sourceTree = "<group>"; };
 		51F0F91E1C8B59B5003F0398 /* Coupon.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Coupon.storyboard; sourceTree = "<group>"; };
 		51F0F9201C8B5B0F003F0398 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		51F0F9221C8B5C14003F0398 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		51F0F9241C8B5C2C003F0398 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		51F0F9261C8B5C36003F0398 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		51F0F9281C8B5C3E003F0398 /* CouponViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CouponViewController.swift; sourceTree = "<group>"; };
 		51F0F92A1C8B5C83003F0398 /* IdentifierViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IdentifierViewController.swift; sourceTree = "<group>"; };
 		91876E1D42C49FDAB789C135 /* Pods-Food Bank.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Food Bank.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Food Bank/Pods-Food Bank.debug.xcconfig"; sourceTree = "<group>"; };
+		CE8F0A7E1C8B6726004C5A19 /* CircularImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularImageView.swift; sourceTree = "<group>"; };
+		CE8F0A811C8B6B99004C5A19 /* Food Bank-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Food Bank-Bridging-Header.h"; sourceTree = "<group>"; };
+		CE8F0A821C8B6B99004C5A19 /* CircleLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleLayout.h; sourceTree = "<group>"; };
+		CE8F0A831C8B6B99004C5A19 /* CircleLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleLayout.m; sourceTree = "<group>"; };
+		CE8F0A891C8B7189004C5A19 /* CircularImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularImageCell.swift; sourceTree = "<group>"; };
 		EDA8C754DDE33AF7B34E2D28 /* Pods_Food_Bank.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Food_Bank.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -69,7 +75,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				51F0F9231C8B5C14003F0398 /* MapKit.framework in Frameworks */,
 				1A7D94CF8083321C122B6587 /* Pods_Food_Bank.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -124,7 +129,6 @@
 				51D55E5B1C8B54290068EDBC /* Assets.xcassets */,
 				51D55E5D1C8B54290068EDBC /* LaunchScreen.storyboard */,
 				51D55E601C8B54290068EDBC /* Info.plist */,
-				51F0F9221C8B5C14003F0398 /* MapKit.framework */,
 			);
 			path = "Food Bank";
 			sourceTree = "<group>";
@@ -213,6 +217,9 @@
 		51D55E7C1C8B55C20068EDBC /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				CE8F0A851C8B6D7C004C5A19 /* Cells */,
+				CE8F0A801C8B6B62004C5A19 /* CircleLayout */,
+				CE8F0A7E1C8B6726004C5A19 /* CircularImageView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -224,6 +231,24 @@
 				1171D189DD7B3E1D562CB476 /* Pods-Food Bank.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		CE8F0A801C8B6B62004C5A19 /* CircleLayout */ = {
+			isa = PBXGroup;
+			children = (
+				CE8F0A821C8B6B99004C5A19 /* CircleLayout.h */,
+				CE8F0A831C8B6B99004C5A19 /* CircleLayout.m */,
+				CE8F0A811C8B6B99004C5A19 /* Food Bank-Bridging-Header.h */,
+			);
+			name = CircleLayout;
+			sourceTree = "<group>";
+		};
+		CE8F0A851C8B6D7C004C5A19 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				CE8F0A891C8B7189004C5A19 /* CircularImageCell.swift */,
+			);
+			name = Cells;
 			sourceTree = "<group>";
 		};
 		EFF4BD0EB99639CB11348BB0 /* Frameworks */ = {
@@ -281,14 +306,17 @@
 		51D55E471C8B54290068EDBC /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0720;
+				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = Team1;
 				TargetAttributes = {
 					51D55E4E1C8B54290068EDBC = {
 						CreatedOnToolsVersion = 7.2.1;
-						DevelopmentTeam = HWAPNMZU3Y;
+						DevelopmentTeam = 2H2K7AG9Y2;
 						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 0;
+							};
 							com.apple.Push = {
 								enabled = 1;
 							};
@@ -401,7 +429,10 @@
 				51F0F92B1C8B5C83003F0398 /* IdentifierViewController.swift in Sources */,
 				5170E6B71C8B625200F9CDCF /* ResultViewController.swift in Sources */,
 				51F0F9251C8B5C2C003F0398 /* MapViewController.swift in Sources */,
+				CE8F0A8A1C8B7189004C5A19 /* CircularImageCell.swift in Sources */,
 				51F0F9291C8B5C3E003F0398 /* CouponViewController.swift in Sources */,
+				CE8F0A841C8B6B99004C5A19 /* CircleLayout.m in Sources */,
+				CE8F0A7F1C8B6726004C5A19 /* CircularImageView.swift in Sources */,
 				51F0F9271C8B5C36003F0398 /* ProfileViewController.swift in Sources */,
 				51F0F9211C8B5B0F003F0398 /* HomeViewController.swift in Sources */,
 			);
@@ -531,11 +562,16 @@
 			baseConfigurationReference = 91876E1D42C49FDAB789C135 /* Pods-Food Bank.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Food Bank/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.team1.Food-Bank";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Food Bank/Views/Food Bank-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -544,11 +580,15 @@
 			baseConfigurationReference = 1171D189DD7B3E1D562CB476 /* Pods-Food Bank.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Food Bank/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.team1.Food-Bank";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Food Bank/Views/Food Bank-Bridging-Header.h";
 			};
 			name = Release;
 		};
