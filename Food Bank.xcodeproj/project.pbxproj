@@ -27,6 +27,8 @@
 		CE8F0A7F1C8B6726004C5A19 /* CircularImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8F0A7E1C8B6726004C5A19 /* CircularImageView.swift */; };
 		CE8F0A841C8B6B99004C5A19 /* CircleLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8F0A831C8B6B99004C5A19 /* CircleLayout.m */; };
 		CE8F0A8A1C8B7189004C5A19 /* CircularImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8F0A891C8B7189004C5A19 /* CircularImageCell.swift */; };
+		5691D9641C8B65290023A62F /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5691D9631C8B65290023A62F /* CoreLocation.framework */; };
+		5691D9661C8B6CF10023A62F /* MapPin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5691D9651C8B6CF10023A62F /* MapPin.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,8 @@
 		51F0F9261C8B5C36003F0398 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		51F0F9281C8B5C3E003F0398 /* CouponViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CouponViewController.swift; sourceTree = "<group>"; };
 		51F0F92A1C8B5C83003F0398 /* IdentifierViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IdentifierViewController.swift; sourceTree = "<group>"; };
+		5691D9631C8B65290023A62F /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		5691D9651C8B6CF10023A62F /* MapPin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapPin.swift; sourceTree = "<group>"; };
 		91876E1D42C49FDAB789C135 /* Pods-Food Bank.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Food Bank.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Food Bank/Pods-Food Bank.debug.xcconfig"; sourceTree = "<group>"; };
 		CE8F0A7E1C8B6726004C5A19 /* CircularImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularImageView.swift; sourceTree = "<group>"; };
 		CE8F0A811C8B6B99004C5A19 /* Food Bank-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Food Bank-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -75,6 +79,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5691D9641C8B65290023A62F /* CoreLocation.framework in Frameworks */,
+				51F0F9231C8B5C14003F0398 /* MapKit.framework in Frameworks */,
 				1A7D94CF8083321C122B6587 /* Pods_Food_Bank.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -187,6 +193,7 @@
 			children = (
 				51F0F91A1C8B59A1003F0398 /* Map.storyboard */,
 				51F0F9241C8B5C2C003F0398 /* MapViewController.swift */,
+				5691D9651C8B6CF10023A62F /* MapPin.swift */,
 			);
 			path = Map;
 			sourceTree = "<group>";
@@ -254,6 +261,7 @@
 		EFF4BD0EB99639CB11348BB0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5691D9631C8B65290023A62F /* CoreLocation.framework */,
 				EDA8C754DDE33AF7B34E2D28 /* Pods_Food_Bank.framework */,
 			);
 			name = Frameworks;
@@ -428,6 +436,7 @@
 				51D55E531C8B54290068EDBC /* AppDelegate.swift in Sources */,
 				51F0F92B1C8B5C83003F0398 /* IdentifierViewController.swift in Sources */,
 				5170E6B71C8B625200F9CDCF /* ResultViewController.swift in Sources */,
+				5691D9661C8B6CF10023A62F /* MapPin.swift in Sources */,
 				51F0F9251C8B5C2C003F0398 /* MapViewController.swift in Sources */,
 				CE8F0A8A1C8B7189004C5A19 /* CircularImageCell.swift in Sources */,
 				51F0F9291C8B5C3E003F0398 /* CouponViewController.swift in Sources */,
