@@ -28,6 +28,9 @@
 		51F0F92B1C8B5C83003F0398 /* IdentifierViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F0F92A1C8B5C83003F0398 /* IdentifierViewController.swift */; };
 		5691D9641C8B65290023A62F /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5691D9631C8B65290023A62F /* CoreLocation.framework */; };
 		5691D9661C8B6CF10023A62F /* MapPin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5691D9651C8B6CF10023A62F /* MapPin.swift */; };
+		5691D9681C8B814E0023A62F /* StoreLocationDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5691D9671C8B814E0023A62F /* StoreLocationDetailTableViewController.swift */; };
+		5691D96A1C8B852E0023A62F /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5691D9691C8B852E0023A62F /* MapKit.framework */; };
+		5691D96B1C8B867C0023A62F /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F0F9241C8B5C2C003F0398 /* MapViewController.swift */; };
 		CE8F0A7F1C8B6726004C5A19 /* CircularImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8F0A7E1C8B6726004C5A19 /* CircularImageView.swift */; };
 		CE8F0A841C8B6B99004C5A19 /* CircleLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8F0A831C8B6B99004C5A19 /* CircleLayout.m */; };
 		CE8F0A8A1C8B7189004C5A19 /* CircularImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8F0A891C8B7189004C5A19 /* CircularImageCell.swift */; };
@@ -70,6 +73,8 @@
 		51F0F92A1C8B5C83003F0398 /* IdentifierViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IdentifierViewController.swift; sourceTree = "<group>"; };
 		5691D9631C8B65290023A62F /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		5691D9651C8B6CF10023A62F /* MapPin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapPin.swift; sourceTree = "<group>"; };
+		5691D9671C8B814E0023A62F /* StoreLocationDetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreLocationDetailTableViewController.swift; sourceTree = "<group>"; };
+		5691D9691C8B852E0023A62F /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		91876E1D42C49FDAB789C135 /* Pods-Food Bank.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Food Bank.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Food Bank/Pods-Food Bank.debug.xcconfig"; sourceTree = "<group>"; };
 		CE8F0A7E1C8B6726004C5A19 /* CircularImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularImageView.swift; sourceTree = "<group>"; };
 		CE8F0A811C8B6B99004C5A19 /* Food Bank-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Food Bank-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -84,6 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5691D96A1C8B852E0023A62F /* MapKit.framework in Frameworks */,
 				5691D9641C8B65290023A62F /* CoreLocation.framework in Frameworks */,
 				1A7D94CF8083321C122B6587 /* Pods_Food_Bank.framework in Frameworks */,
 			);
@@ -197,6 +203,7 @@
 			isa = PBXGroup;
 			children = (
 				51F0F91A1C8B59A1003F0398 /* Map.storyboard */,
+				5691D9671C8B814E0023A62F /* StoreLocationDetailTableViewController.swift */,
 				51F0F9241C8B5C2C003F0398 /* MapViewController.swift */,
 				5691D9651C8B6CF10023A62F /* MapPin.swift */,
 			);
@@ -268,6 +275,7 @@
 		EFF4BD0EB99639CB11348BB0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5691D9691C8B852E0023A62F /* MapKit.framework */,
 				5691D9631C8B65290023A62F /* CoreLocation.framework */,
 				EDA8C754DDE33AF7B34E2D28 /* Pods_Food_Bank.framework */,
 			);
@@ -453,6 +461,8 @@
 				51F0F9271C8B5C36003F0398 /* ProfileViewController.swift in Sources */,
 				51F0F9211C8B5B0F003F0398 /* HomeViewController.swift in Sources */,
 				5170E6BE1C8B78B100F9CDCF /* FoodDetail.swift in Sources */,
+				5691D9681C8B814E0023A62F /* StoreLocationDetailTableViewController.swift in Sources */,
+				5691D96B1C8B867C0023A62F /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
