@@ -2,6 +2,7 @@ PODS:
   - Alamofire (3.2.1)
   - Bolts/Tasks (1.6.0)
   - MTBBarcodeScanner (1.9.1)
+  - ObjectMapper (1.1.5)
   - Parse (1.12.0):
     - Bolts/Tasks (~> 1.5)
   - PureLayout (3.0.1)
@@ -9,6 +10,7 @@ PODS:
 DEPENDENCIES:
   - Alamofire (~> 3.2)
   - MTBBarcodeScanner (~> 1.9)
+  - ObjectMapper (~> 1.1)
   - Parse (~> 1.12)
   - PureLayout (~> 3.0)
 
@@ -16,6 +18,7 @@ SPEC CHECKSUMS:
   Alamofire: f11d8624a05f5d39e0c99309b3e600a3ba64298a
   Bolts: f52a250053bb517ca874523c3913776359ab3def
   MTBBarcodeScanner: d65037ab37f0932b46e11a51e98978593424d64e
+  ObjectMapper: 528b1a6677a6acac7747edd508576983e76a9148
   Parse: de2c52a9a1421b91ae7594ab8ce191afd184f19b
   PureLayout: f35f5384c9c4e4479df041dbe33ad7577b71ddfb
 

@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		1A7D94CF8083321C122B6587 /* Pods_Food_Bank.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDA8C754DDE33AF7B34E2D28 /* Pods_Food_Bank.framework */; };
 		5170E6B71C8B625200F9CDCF /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5170E6B61C8B625200F9CDCF /* ResultViewController.swift */; };
+		5170E6B91C8B665200F9CDCF /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5170E6B81C8B665200F9CDCF /* APIClient.swift */; };
+		5170E6BC1C8B759500F9CDCF /* Result.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5170E6BB1C8B759500F9CDCF /* Result.storyboard */; };
+		5170E6BE1C8B78B100F9CDCF /* FoodDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5170E6BD1C8B78B100F9CDCF /* FoodDetail.swift */; };
+		518A95821C8B8259003E5448 /* Donate.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 518A95811C8B8259003E5448 /* Donate.storyboard */; };
+		518A95841C8B8265003E5448 /* DonateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518A95831C8B8265003E5448 /* DonateViewController.swift */; };
 		51D55E531C8B54290068EDBC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D55E521C8B54290068EDBC /* AppDelegate.swift */; };
 		51D55E5A1C8B54290068EDBC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51D55E581C8B54290068EDBC /* Main.storyboard */; };
 		51D55E5C1C8B54290068EDBC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51D55E5B1C8B54290068EDBC /* Assets.xcassets */; };
@@ -18,11 +23,8 @@
 		51F0F9191C8B5999003F0398 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51F0F9181C8B5999003F0398 /* Profile.storyboard */; };
 		51F0F91B1C8B59A1003F0398 /* Map.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51F0F91A1C8B59A1003F0398 /* Map.storyboard */; };
 		51F0F91D1C8B59A8003F0398 /* Identifier.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51F0F91C1C8B59A8003F0398 /* Identifier.storyboard */; };
-		51F0F91F1C8B59B5003F0398 /* Coupon.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51F0F91E1C8B59B5003F0398 /* Coupon.storyboard */; };
 		51F0F9211C8B5B0F003F0398 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F0F9201C8B5B0F003F0398 /* HomeViewController.swift */; };
-		51F0F9251C8B5C2C003F0398 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F0F9241C8B5C2C003F0398 /* MapViewController.swift */; };
 		51F0F9271C8B5C36003F0398 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F0F9261C8B5C36003F0398 /* ProfileViewController.swift */; };
-		51F0F9291C8B5C3E003F0398 /* CouponViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F0F9281C8B5C3E003F0398 /* CouponViewController.swift */; };
 		51F0F92B1C8B5C83003F0398 /* IdentifierViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F0F92A1C8B5C83003F0398 /* IdentifierViewController.swift */; };
 		5691D9641C8B65290023A62F /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5691D9631C8B65290023A62F /* CoreLocation.framework */; };
 		5691D9661C8B6CF10023A62F /* MapPin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5691D9651C8B6CF10023A62F /* MapPin.swift */; };
@@ -44,6 +46,11 @@
 /* Begin PBXFileReference section */
 		1171D189DD7B3E1D562CB476 /* Pods-Food Bank.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Food Bank.release.xcconfig"; path = "Pods/Target Support Files/Pods-Food Bank/Pods-Food Bank.release.xcconfig"; sourceTree = "<group>"; };
 		5170E6B61C8B625200F9CDCF /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		5170E6B81C8B665200F9CDCF /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		5170E6BB1C8B759500F9CDCF /* Result.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Result.storyboard; sourceTree = "<group>"; };
+		5170E6BD1C8B78B100F9CDCF /* FoodDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodDetail.swift; sourceTree = "<group>"; };
+		518A95811C8B8259003E5448 /* Donate.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Donate.storyboard; sourceTree = "<group>"; };
+		518A95831C8B8265003E5448 /* DonateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DonateViewController.swift; sourceTree = "<group>"; };
 		51D55E4F1C8B54290068EDBC /* Food Bank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Food Bank.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		51D55E521C8B54290068EDBC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		51D55E591C8B54290068EDBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -57,11 +64,9 @@
 		51F0F9181C8B5999003F0398 /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		51F0F91A1C8B59A1003F0398 /* Map.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Map.storyboard; sourceTree = "<group>"; };
 		51F0F91C1C8B59A8003F0398 /* Identifier.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Identifier.storyboard; sourceTree = "<group>"; };
-		51F0F91E1C8B59B5003F0398 /* Coupon.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Coupon.storyboard; sourceTree = "<group>"; };
 		51F0F9201C8B5B0F003F0398 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		51F0F9241C8B5C2C003F0398 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		51F0F9261C8B5C36003F0398 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
-		51F0F9281C8B5C3E003F0398 /* CouponViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CouponViewController.swift; sourceTree = "<group>"; };
 		51F0F92A1C8B5C83003F0398 /* IdentifierViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IdentifierViewController.swift; sourceTree = "<group>"; };
 		5691D9631C8B65290023A62F /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		5691D9651C8B6CF10023A62F /* MapPin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapPin.swift; sourceTree = "<group>"; };
@@ -98,8 +103,18 @@
 			isa = PBXGroup;
 			children = (
 				5170E6B61C8B625200F9CDCF /* ResultViewController.swift */,
+				5170E6BB1C8B759500F9CDCF /* Result.storyboard */,
 			);
 			path = Result;
+			sourceTree = "<group>";
+		};
+		518A95801C8B8231003E5448 /* Donate */ = {
+			isa = PBXGroup;
+			children = (
+				518A95811C8B8259003E5448 /* Donate.storyboard */,
+				518A95831C8B8265003E5448 /* DonateViewController.swift */,
+			);
+			path = Donate;
 			sourceTree = "<group>";
 		};
 		51D55E461C8B54290068EDBC = {
@@ -150,22 +165,13 @@
 		51D55E741C8B55C20068EDBC /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				51D55E751C8B55C20068EDBC /* Coupon */,
 				51D55E761C8B55C20068EDBC /* Home */,
 				51D55E771C8B55C20068EDBC /* Identifier */,
 				51D55E781C8B55C20068EDBC /* Map */,
+				518A95801C8B8231003E5448 /* Donate */,
 				51D55E791C8B55C20068EDBC /* Profile */,
 			);
 			path = Controllers;
-			sourceTree = "<group>";
-		};
-		51D55E751C8B55C20068EDBC /* Coupon */ = {
-			isa = PBXGroup;
-			children = (
-				51F0F91E1C8B59B5003F0398 /* Coupon.storyboard */,
-				51F0F9281C8B5C3E003F0398 /* CouponViewController.swift */,
-			);
-			path = Coupon;
 			sourceTree = "<group>";
 		};
 		51D55E761C8B55C20068EDBC /* Home */ = {
@@ -216,6 +222,8 @@
 		51D55E7B1C8B55C20068EDBC /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				5170E6B81C8B665200F9CDCF /* APIClient.swift */,
+				5170E6BD1C8B78B100F9CDCF /* FoodDetail.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -360,10 +368,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				51D55E5F1C8B54290068EDBC /* LaunchScreen.storyboard in Resources */,
+				5170E6BC1C8B759500F9CDCF /* Result.storyboard in Resources */,
 				51D55E5C1C8B54290068EDBC /* Assets.xcassets in Resources */,
 				51F0F9191C8B5999003F0398 /* Profile.storyboard in Resources */,
 				51D55E5A1C8B54290068EDBC /* Main.storyboard in Resources */,
-				51F0F91F1C8B59B5003F0398 /* Coupon.storyboard in Resources */,
+				518A95821C8B8259003E5448 /* Donate.storyboard in Resources */,
 				51F0F9171C8B5958003F0398 /* Home.storyboard in Resources */,
 				51F0F91B1C8B59A1003F0398 /* Map.storyboard in Resources */,
 				51F0F91D1C8B59A8003F0398 /* Identifier.storyboard in Resources */,
@@ -433,16 +442,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				51D55E531C8B54290068EDBC /* AppDelegate.swift in Sources */,
+				518A95841C8B8265003E5448 /* DonateViewController.swift in Sources */,
 				51F0F92B1C8B5C83003F0398 /* IdentifierViewController.swift in Sources */,
 				5170E6B71C8B625200F9CDCF /* ResultViewController.swift in Sources */,
+				5170E6B91C8B665200F9CDCF /* APIClient.swift in Sources */,
 				5691D9661C8B6CF10023A62F /* MapPin.swift in Sources */,
-				51F0F9251C8B5C2C003F0398 /* MapViewController.swift in Sources */,
 				CE8F0A8A1C8B7189004C5A19 /* CircularImageCell.swift in Sources */,
-				51F0F9291C8B5C3E003F0398 /* CouponViewController.swift in Sources */,
 				CE8F0A841C8B6B99004C5A19 /* CircleLayout.m in Sources */,
 				CE8F0A7F1C8B6726004C5A19 /* CircularImageView.swift in Sources */,
 				51F0F9271C8B5C36003F0398 /* ProfileViewController.swift in Sources */,
 				51F0F9211C8B5B0F003F0398 /* HomeViewController.swift in Sources */,
+				5170E6BE1C8B78B100F9CDCF /* FoodDetail.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -573,6 +583,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = "Food Bank/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.team1.Food-Bank";
@@ -591,6 +602,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = "Food Bank/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.team1.Food-Bank";

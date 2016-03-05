@@ -17,16 +17,36 @@ class IdentifierViewController: UIViewController {
         super.viewDidLoad()
 
         scanner = MTBBarcodeScanner(previewView: view)
-        scanner.resultBlock = { result in
-            let vc = ResultViewController()
-            self.navigationController?.pushViewController(vc, animated: true)
-        }
+
     }
 
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(true)
         
-        scanner.startScanning()
+        scanner.startScanningWithResultBlock { (results) -> Void in
+            
+            let codes = results as? [AVMetadataMachineReadableCodeObject]
+            if let codes = codes {
+                if let product = codes.first {
+                    self.scanner.stopScanning()
+                    APIClient.search(barcode: product.stringValue, result: { result in
+                        dispatch_async(dispatch_get_main_queue(), { () -> Void in
+                            if let result = result {
+                                print(result)
+                                let vc = UIStoryboard(name: "Result", bundle: nil).instantiateInitialViewController() as! ResultViewController
+                                vc.result = result
+                                self.navigationController?.pushViewController(vc, animated: true)
+                            }
+                            else {
+                                self.scanner.startScanning()
+                            }
+                        })
+                    })
+                    
+                }
+                
+            }
+        }
     }
     
     override func viewWillDisappear(animated: Bool) {
