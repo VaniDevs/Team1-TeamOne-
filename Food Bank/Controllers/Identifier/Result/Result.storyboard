@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="wx2-SQ-ND8">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--Result View Controller-->
+        <scene sceneID="ox5-aF-BeM">
+            <objects>
+                <viewController id="wx2-SQ-ND8" customClass="ResultViewController" customModule="Food_Bank" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="f2M-9y-kCH"/>
+                        <viewControllerLayoutGuide type="bottom" id="9v4-BA-dSj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="N72-xG-9X7">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gf2-SO-SYu">
+                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="9v4-BA-dSj" firstAttribute="top" secondItem="gf2-SO-SYu" secondAttribute="bottom" id="76y-86-cuv"/>
+                            <constraint firstAttribute="trailing" secondItem="gf2-SO-SYu" secondAttribute="trailing" id="MlU-vl-na3"/>
+                            <constraint firstItem="gf2-SO-SYu" firstAttribute="leading" secondItem="N72-xG-9X7" secondAttribute="leading" id="cFi-DS-7kA"/>
+                            <constraint firstItem="gf2-SO-SYu" firstAttribute="top" secondItem="f2M-9y-kCH" secondAttribute="bottom" id="k2l-ao-PAj"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="resultLabel" destination="gf2-SO-SYu" id="8ck-Fw-ItG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WL3-Vn-HvW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="768" y="490"/>
+        </scene>
+    </scenes>
+</document>

@@ -9,6 +9,7 @@ pod 'Alamofire', '~> 3.2'
 pod 'PureLayout', '~> 3.0'
 pod 'Parse', '~> 1.12'
 pod 'MTBBarcodeScanner', '~> 1.9'
+pod 'ObjectMapper', '~> 1.1'
 end
 
 target 'Food BankTests' do
