@@ -16,7 +16,6 @@
 		518A95841C8B8265003E5448 /* DonateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518A95831C8B8265003E5448 /* DonateViewController.swift */; };
 		51D55E531C8B54290068EDBC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D55E521C8B54290068EDBC /* AppDelegate.swift */; };
 		51D55E5A1C8B54290068EDBC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51D55E581C8B54290068EDBC /* Main.storyboard */; };
-		51D55E5C1C8B54290068EDBC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51D55E5B1C8B54290068EDBC /* Assets.xcassets */; };
 		51D55E5F1C8B54290068EDBC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51D55E5D1C8B54290068EDBC /* LaunchScreen.storyboard */; };
 		51D55E6A1C8B54290068EDBC /* Food_BankTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D55E691C8B54290068EDBC /* Food_BankTests.swift */; };
 		51F0F9171C8B5958003F0398 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51F0F9161C8B5958003F0398 /* Home.storyboard */; };
@@ -34,6 +33,9 @@
 		CE8F0A7F1C8B6726004C5A19 /* CircularImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8F0A7E1C8B6726004C5A19 /* CircularImageView.swift */; };
 		CE8F0A841C8B6B99004C5A19 /* CircleLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8F0A831C8B6B99004C5A19 /* CircleLayout.m */; };
 		CE8F0A8A1C8B7189004C5A19 /* CircularImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8F0A891C8B7189004C5A19 /* CircularImageCell.swift */; };
+		CE8F0A8F1C8B9623004C5A19 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8F0A8E1C8B9623004C5A19 /* RoundedButton.swift */; };
+		CE8F0A911C8B9D4D004C5A19 /* CouponView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE8F0A901C8B9D4D004C5A19 /* CouponView.xib */; };
+		CE8F0A931C8BA4E7004C5A19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE8F0A921C8BA4E7004C5A19 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,7 +59,6 @@
 		51D55E4F1C8B54290068EDBC /* Food Bank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Food Bank.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		51D55E521C8B54290068EDBC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		51D55E591C8B54290068EDBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		51D55E5B1C8B54290068EDBC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		51D55E5E1C8B54290068EDBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		51D55E601C8B54290068EDBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		51D55E651C8B54290068EDBC /* Food BankTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Food BankTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -81,6 +82,9 @@
 		CE8F0A821C8B6B99004C5A19 /* CircleLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleLayout.h; sourceTree = "<group>"; };
 		CE8F0A831C8B6B99004C5A19 /* CircleLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleLayout.m; sourceTree = "<group>"; };
 		CE8F0A891C8B7189004C5A19 /* CircularImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularImageCell.swift; sourceTree = "<group>"; };
+		CE8F0A8E1C8B9623004C5A19 /* RoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		CE8F0A901C8B9D4D004C5A19 /* CouponView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CouponView.xib; sourceTree = "<group>"; };
+		CE8F0A921C8BA4E7004C5A19 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EDA8C754DDE33AF7B34E2D28 /* Pods_Food_Bank.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Food_Bank.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -119,6 +123,7 @@
 			children = (
 				518A95811C8B8259003E5448 /* Donate.storyboard */,
 				518A95831C8B8265003E5448 /* DonateViewController.swift */,
+				CE8F0A901C8B9D4D004C5A19 /* CouponView.xib */,
 			);
 			path = Donate;
 			sourceTree = "<group>";
@@ -146,13 +151,13 @@
 		51D55E511C8B54290068EDBC /* Food Bank */ = {
 			isa = PBXGroup;
 			children = (
+				CE8F0A921C8BA4E7004C5A19 /* Assets.xcassets */,
 				51D55E741C8B55C20068EDBC /* Controllers */,
 				51D55E7A1C8B55C20068EDBC /* Helpers */,
 				51D55E7B1C8B55C20068EDBC /* Models */,
 				51D55E7C1C8B55C20068EDBC /* Views */,
 				51D55E521C8B54290068EDBC /* AppDelegate.swift */,
 				51D55E581C8B54290068EDBC /* Main.storyboard */,
-				51D55E5B1C8B54290068EDBC /* Assets.xcassets */,
 				51D55E5D1C8B54290068EDBC /* LaunchScreen.storyboard */,
 				51D55E601C8B54290068EDBC /* Info.plist */,
 			);
@@ -241,6 +246,7 @@
 				CE8F0A851C8B6D7C004C5A19 /* Cells */,
 				CE8F0A801C8B6B62004C5A19 /* CircleLayout */,
 				CE8F0A7E1C8B6726004C5A19 /* CircularImageView.swift */,
+				CE8F0A8E1C8B9623004C5A19 /* RoundedButton.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -377,10 +383,11 @@
 			files = (
 				51D55E5F1C8B54290068EDBC /* LaunchScreen.storyboard in Resources */,
 				5170E6BC1C8B759500F9CDCF /* Result.storyboard in Resources */,
-				51D55E5C1C8B54290068EDBC /* Assets.xcassets in Resources */,
 				51F0F9191C8B5999003F0398 /* Profile.storyboard in Resources */,
 				51D55E5A1C8B54290068EDBC /* Main.storyboard in Resources */,
+				CE8F0A931C8BA4E7004C5A19 /* Assets.xcassets in Resources */,
 				518A95821C8B8259003E5448 /* Donate.storyboard in Resources */,
+				CE8F0A911C8B9D4D004C5A19 /* CouponView.xib in Resources */,
 				51F0F9171C8B5958003F0398 /* Home.storyboard in Resources */,
 				51F0F91B1C8B59A1003F0398 /* Map.storyboard in Resources */,
 				51F0F91D1C8B59A8003F0398 /* Identifier.storyboard in Resources */,
@@ -450,6 +457,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				51D55E531C8B54290068EDBC /* AppDelegate.swift in Sources */,
+				CE8F0A8F1C8B9623004C5A19 /* RoundedButton.swift in Sources */,
 				518A95841C8B8265003E5448 /* DonateViewController.swift in Sources */,
 				51F0F92B1C8B5C83003F0398 /* IdentifierViewController.swift in Sources */,
 				5170E6B71C8B625200F9CDCF /* ResultViewController.swift in Sources */,
