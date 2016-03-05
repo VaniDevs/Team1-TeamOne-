@@ -12,6 +12,8 @@ class StoreLocationDetailTableViewController: UITableViewController {
 
     let cellIdentifierList = ["mapCell", "directionCell", "phoneCell", "hoursCell"]
     
+    var storeMapPin: MapPin?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -29,19 +31,20 @@ class StoreLocationDetailTableViewController: UITableViewController {
         
         switch cellIdentifier {
         case "mapCell":
-            var cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath) as! MapTableViewCell
+            let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath) as! MapTableViewCell
+            cell.configurate(storeMapPin)
             return cell
             
         case "directionCell":
-            var cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath)
+            let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath) as! DirectionTableViewCell
             return cell
             
         case "phoneCell":
-            var cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath)
+            let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath) as! PhoneTableViewCell
             return cell
             
         case "hoursCell":
-            var cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath)
+            let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath) as! HoursTableViewCell
             return cell
             
         default:

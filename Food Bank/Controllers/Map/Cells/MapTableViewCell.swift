@@ -7,18 +7,24 @@
 //
 
 import UIKit
+import MapKit
 
 class MapTableViewCell: UITableViewCell {
 
+    @IBOutlet var storeMapView: MKMapView!
+    
+    var storePin: MapPin?
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
-
-    override func setSelected(selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    
+    func configure(pin: MapPin?) {
+        if let pin = pin {
+            storeMapView.addAnnotation(pin)
+            let coordinate = pin.myCoordinate
+            let span = MKCoordinateSpanMake(0.1, 0.1)
+            storeMapView.setRegion(MKCoordinateRegion(center: coordinate, span: span), animated: true)
+        }
     }
-
 }

@@ -19,6 +19,8 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
         "2285 W 4th Avenue, Vancouver"
     ]
     
+    var clickedMapPin: MapPin?
+    
     override func viewDidLoad() {
         loadStoreLocations()
 
@@ -65,6 +67,7 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
             view.canShowCallout = true
             view.calloutOffset = CGPoint(x: -5, y: 5)
             let detailButton = UIButton(type: .DetailDisclosure)
+            clickedMapPin = annotation
             detailButton.addTarget(self, action: "mapPinDetailedButtonClicked:", forControlEvents: UIControlEvents.TouchUpInside)
             view.rightCalloutAccessoryView = detailButton as UIView
             
@@ -75,10 +78,10 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
     }
     
     func mapPinDetailedButtonClicked(sender:UIButton!) {
-        if let vc = storyboard?.instantiateViewControllerWithIdentifier("StoreLocationDetailTableView") {
-            navigationController?.pushViewController(vc, animated: true)
-        }
-        
+        let vc = storyboard?.instantiateViewControllerWithIdentifier("StoreLocationDetailTableView") as! StoreLocationDetailTableViewController
+
+        vc.storeMapPin = clickedMapPin
+        navigationController?.pushViewController(vc, animated: true)
     }
     
 }

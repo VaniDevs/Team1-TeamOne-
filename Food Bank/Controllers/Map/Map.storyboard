@@ -74,7 +74,7 @@
         <scene sceneID="V2k-Ev-rSa">
             <objects>
                 <tableViewController storyboardIdentifier="StoreLocationDetailTableView" id="jWa-PW-c6j" customClass="StoreLocationDetailTableViewController" customModule="Food_Bank" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Qt9-cv-wXq">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Qt9-cv-wXq">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -97,6 +97,9 @@
                                         <constraint firstItem="lyc-Ho-fQW" firstAttribute="top" secondItem="aB0-rR-D8i" secondAttribute="top" id="WdR-mb-sCy"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="storeMapView" destination="lyc-Ho-fQW" id="0wt-ZF-hPW"/>
+                                </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="directionCell" rowHeight="100" id="ydl-ex-eEn" customClass="DirectionTableViewCell" customModule="Food_Bank" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="278" width="600" height="100"/>
