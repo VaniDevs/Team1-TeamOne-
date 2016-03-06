@@ -22,7 +22,7 @@ class DirectionTableViewCell: UITableViewCell {
         if let pin = pin {
             address.text = pin.address
             if let currentLocation = userLocation {
-                let storeLocation = CLLocation(latitude: pin.myCoordinate.latitude, longitude: pin.myCoordinate.longitude)
+                let storeLocation = CLLocation(latitude: pin.coordinate.latitude, longitude: pin.coordinate.longitude)
                 let distanceToStore = currentLocation.distanceFromLocation(storeLocation)
                 distance.text = NSString(format:"%.2f km", distanceToStore/1000) as String
             }

@@ -39,7 +39,6 @@ class StoreLocationDetailTableViewController: UITableViewController {
             
         case "directionCell":
             let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath) as! DirectionTableViewCell
-            
             cell.configure(storeMapPin, userLocation: userLocation)
             return cell
             

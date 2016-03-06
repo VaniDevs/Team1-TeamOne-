@@ -50,7 +50,7 @@ extension HomeViewController: UICollectionViewDataSource {
 
 extension HomeViewController: UICollectionViewDelegate {
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
-        print("asdf")
+        self.performSegueWithIdentifier("showTopFoodStat", sender: self)
     }
 }
 

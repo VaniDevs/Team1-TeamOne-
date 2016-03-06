@@ -87,7 +87,6 @@
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         </state>
                                                         <connections>
-                                                            <action selector="donateOverPhone:" destination="ugQ-A1-AdW" eventType="touchUpInside" id="UiM-pe-VF9"/>
                                                             <action selector="paypal:" destination="ugQ-A1-AdW" eventType="touchUpInside" id="leu-6S-ZhB"/>
                                                         </connections>
                                                     </button>
