@@ -8,22 +8,44 @@
 
 import Foundation
 import MapKit
+import ObjectMapper
 
-class MapPin : NSObject, MKAnnotation {
+class MapPin : NSObject, MKAnnotation, Mappable {
     
-    var myCoordinate: CLLocationCoordinate2D
+    var pinCoordinate: CLLocationCoordinate2D
+    var latitude: CLLocationDegrees?
+    var longitude: CLLocationDegrees?
     var title: String?
     var address: String?
     var phone: String?
     var hours: [String]?
     
-    init(myCoordinate: CLLocationCoordinate2D) {
-        self.myCoordinate = myCoordinate
+    override init() {
+        self.pinCoordinate = CLLocationCoordinate2D()
+        super.init()
+    }
+    
+    convenience required init?(_ map: Map) {
+        self.init()
+    }
+    
+    init(coordinate: CLLocationCoordinate2D) {
+        self.pinCoordinate = coordinate
     }
     
     var coordinate: CLLocationCoordinate2D {
-        return myCoordinate
+        if latitude != nil && longitude != nil {
+            return CLLocationCoordinate2D(latitude: latitude!, longitude: longitude!)
+        }
+        return pinCoordinate
     }
     
-    
+    func mapping(map: Map) {
+        latitude <- map["geometry.location.lat"]
+        longitude <- map["geometry.location.lng"]
+        title <- map["name"]
+        address <- map["formatted_address"]
+        phone <- map["formatted_phone_number"]
+        hours <- map["opening_hours.weekday_text"]
+    }
 }

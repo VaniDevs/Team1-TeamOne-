@@ -8,15 +8,22 @@
 
 import UIKit
 import MapKit
+import Alamofire
+import ObjectMapper
 
 class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
     
     @IBOutlet var storeLocationMapView: MKMapView!
 
     let addressBook = [
-        "370 E Broadway, Vancouver",
-        "1675 Robson Street, Vancouver",
-        "2285 W 4th Avenue, Vancouver"
+        "Buy Low, 370 E Broadway, Vancouver",
+        "Capers, 1675 Robson Street, Vancouver",
+        "Capers, 2285 W 4th Avenue, Vancouver",
+        "Choices, 2627 W 16th, Vancouver",
+        "IGA, 2030 W Broadway, Vancouver",
+        "IGA, 2286 W Broadway, Vancouver",
+        "Price Smart, 2880 Bentall Street, Vancouver",
+        "Safeway, 1641 Davie Street, Vancouver"
     ]
     
     var clickedMapPin: MapPin?
@@ -35,23 +42,33 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
     }
     
     private func loadStoreLocations() {
+        
         for address in addressBook {
-            CLGeocoder().geocodeAddressString(address, completionHandler: { (placemarks, error) in
-                if error != nil {
-                    print(error)
-                    return
-                }
-                if let placemark = placemarks?[0] {
-                    
-                    let location = placemark.location
-                    let coordinate = location?.coordinate
-
-                    let storeLocationPin = MapPin(myCoordinate: coordinate!)
-                    storeLocationPin.title = placemark.name
-                    storeLocationPin.address = placemark.subThoroughfare! + " " + placemark.thoroughfare! + "\n" + placemark.locality! + ", " + placemark.administrativeArea! + " " + placemark.postalCode!
-                    self.storeLocationMapView.addAnnotation(storeLocationPin)
-                }
+            
+            APIClient.getGooglePlaceId(addressName: address, result: { (result) -> () in
+                dispatch_async(dispatch_get_main_queue(), { () -> Void in
+                    if result != nil {
+                        self.getGooglePlaceDetails(result!)
+                    }
+                })
             })
+        }
+    }
+    
+    private func getGooglePlaceDetails(placeId: String) {
+        APIClient.getGooglePlaceDetails(placeId) { (result) -> () in
+
+            if let dict = result!["result"] {
+                do {
+                    if let theJSONData: NSData = try NSJSONSerialization.dataWithJSONObject(dict!, options: .PrettyPrinted) {
+                        let theJSONString = NSString(data: theJSONData, encoding: NSASCIIStringEncoding)
+                        let storeLocationPin = Mapper<MapPin>().map(theJSONString!)
+                        self.storeLocationMapView.addAnnotation(storeLocationPin!)
+                    }
+                } catch {
+                    
+                }
+            }
         }
     }
     
