@@ -114,8 +114,8 @@
                             </constraints>
                             <variation key="default">
                                 <mask key="constraints">
-                                    <exclude reference="kAw-kO-TMQ"/>
                                     <exclude reference="KEi-cq-Jui"/>
+                                    <exclude reference="kAw-kO-TMQ"/>
                                 </mask>
                             </variation>
                         </view>

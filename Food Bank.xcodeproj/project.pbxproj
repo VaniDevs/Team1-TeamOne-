@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1A7D94CF8083321C122B6587 /* Pods_Food_Bank.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDA8C754DDE33AF7B34E2D28 /* Pods_Food_Bank.framework */; };
+		516B467A1C8C073B00314119 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 516B46791C8C073B00314119 /* DataStore.swift */; };
 		5170E6B71C8B625200F9CDCF /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5170E6B61C8B625200F9CDCF /* ResultViewController.swift */; };
 		5170E6B91C8B665200F9CDCF /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5170E6B81C8B665200F9CDCF /* APIClient.swift */; };
 		5170E6BC1C8B759500F9CDCF /* Result.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5170E6BB1C8B759500F9CDCF /* Result.storyboard */; };
@@ -60,6 +61,7 @@
 
 /* Begin PBXFileReference section */
 		1171D189DD7B3E1D562CB476 /* Pods-Food Bank.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Food Bank.release.xcconfig"; path = "Pods/Target Support Files/Pods-Food Bank/Pods-Food Bank.release.xcconfig"; sourceTree = "<group>"; };
+		516B46791C8C073B00314119 /* DataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 		5170E6B61C8B625200F9CDCF /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		5170E6B81C8B665200F9CDCF /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		5170E6BB1C8B759500F9CDCF /* Result.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Result.storyboard; sourceTree = "<group>"; };
@@ -272,6 +274,7 @@
 				5170E6B81C8B665200F9CDCF /* APIClient.swift */,
 				5170E6BD1C8B78B100F9CDCF /* FoodDetail.swift */,
 				518A95891C8B9C9F003E5448 /* SearchItem.swift */,
+				516B46791C8C073B00314119 /* DataStore.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -505,6 +508,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				518A958A1C8B9C9F003E5448 /* SearchItem.swift in Sources */,
+				516B467A1C8C073B00314119 /* DataStore.swift in Sources */,
 				51D55E531C8B54290068EDBC /* AppDelegate.swift in Sources */,
 				518A95841C8B8265003E5448 /* DonateViewController.swift in Sources */,
 				518A958F1C8BB590003E5448 /* FoodStatsTableViewController.swift in Sources */,
@@ -660,7 +664,7 @@
 				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = "Food Bank/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.team1.FoodBank;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.team1.Food-Bank";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Food Bank/Views/Food Bank-Bridging-Header.h";
@@ -679,7 +683,7 @@
 				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = "Food Bank/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.team1.FoodBank;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.team1.Food-Bank";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Food Bank/Views/Food Bank-Bridging-Header.h";

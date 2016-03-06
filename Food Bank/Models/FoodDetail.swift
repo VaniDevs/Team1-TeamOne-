@@ -8,33 +8,39 @@
 
 import Foundation
 import ObjectMapper
+import RealmSwift
 
-class FoodDetail: Mappable {
+class FoodDetail: Object, Mappable {
+    dynamic var id: String?
+    dynamic var brandName: String?
+    dynamic var itemName: String?
+    dynamic var calories: Float = 0
+    dynamic var caloriesFromFat: Float = 0
+    dynamic var totalFat: Float = 0
+    dynamic var saturatedFat: Float = 0
+    dynamic var transFat: Float = 0
+    dynamic var cholesterol: Float = 0
+    dynamic var sodium: Float = 0
+    dynamic var totalCarbs: Float = 0
+    dynamic var dietaryFiber: Float = 0
+    dynamic var sugars: Float = 0
+    dynamic var protein: Float = 0
+    dynamic var vitaminA: Float = 0
+    dynamic var vitaminC: Float = 0
+    dynamic var calcium: Float = 0
+    dynamic var iron: Float = 0
+    dynamic var ingredient: String?
     
-    var brandName: String?
-    var itemName: String?
-    var totalFat: Float?
-    var saturatedFat: Float?
-    var transFat: Float?
-    var cholesterol: Float?
-    var sodium: Float?
-    var totalCarbs: Float?
-    var dietaryFiber: Float?
-    var sugars: Float?
-    var protein: Float?
-    var vitaminA: Float?
-    var vitaminC: Float?
-    var calcium: Float?
-    var iron: Float?
-    var ingredient: String?
-    
-    required init?(_ map: Map) {
-
+    required convenience init?(_ map: Map) {
+        self.init()
     }
 
     func mapping(map: Map) {
+        id <- map["item_id"]
         brandName <- map["brand_name"]
         itemName <- map["item_name"]
+        calories <- map["nf_calories"]
+        caloriesFromFat <- map["nf_calories_from_fat"]
         totalFat <- map["nf_total_fat"]
         saturatedFat <- map["nf_saturated_fat"]
         transFat <- map["nf_trans_fatty_acid"]
@@ -51,8 +57,24 @@ class FoodDetail: Mappable {
         ingredient <- map["nf_ingredient_statement"]
     }
     
+    override static func primaryKey() -> String {
+        return "id"
+    }
 }
 
+class TopFood: FoodDetail {
+    dynamic var desc: String?
+    
+    required convenience init?(_ map: Map) {
+        self.init()
+    }
+    
+    override func mapping(map: Map) {
+        super.mapping(map)
+        
+        desc <- map["desc"]
+    }
+}
 /*
 
 {

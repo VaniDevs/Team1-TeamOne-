@@ -13,6 +13,7 @@ pod 'ObjectMapper', '~> 1.1'
 pod 'DZNEmptyDataSet'
 pod 'KLCPopup'
 pod 'Braintree'
+pod 'RealmSwift', '~> 0.98'
 end
 
 target 'Food BankTests' do

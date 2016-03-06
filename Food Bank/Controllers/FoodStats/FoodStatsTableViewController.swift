@@ -34,47 +34,19 @@ class FoodStatsTableViewController: UITableViewController {
     }
     
     func setupData() {
-        if let totalFat = item.totalFat {
-            totalFatLabel.text = "\(totalFat) g"
-        }
-        if let saturatedFat = item.saturatedFat {
-            saturatedFatLabel.text = "\(saturatedFat) g"
-        }
-        if let transFat = item.transFat {
-            transFatLabel.text = "\(transFat) g"
-        }
-        if let cholesterol = item.cholesterol {
-            cholesterolLabel.text = "\(cholesterol) mg"
-        }
-        if let sodium = item.sodium {
-            sodiumLabel.text = "\(sodium) mg"
-        }
-        if let totalCarbs = item.totalCarbs {
-            totalCarbsLabel.text = "\(totalCarbs) g"
-        }
-        if let dietaryFiber = item.dietaryFiber {
-            dietaryFiberLabel.text = "\(dietaryFiber) g"
-        }
-        if let sugars = item.sugars {
-            sugarsLabel.text = "\(sugars) g"
-        }
-        if let protein = item.protein {
-            proteinLabel.text = "\(protein) g"
-        }
-        if let vitaminA = item.vitaminA {
-            vitaminALabel.text = "\(vitaminA)%"
-        }
-        if let vitaminC = item.vitaminC {
-            vitaminCLabel.text = "\(vitaminC)%"
-        }
-        if let calcium = item.calcium {
-            calciumLabel.text = "\(calcium)%"
-        }
-        if let iron = item.iron {
-            ironLabel.text = "\(iron)%"
-        }
-        if let ingredient = item.ingredient {
-            ingredientLabel.text = ingredient
-        }
+        totalFatLabel.text = "\(item.totalFat) g"
+        saturatedFatLabel.text = "\(item.saturatedFat) g"
+        transFatLabel.text = "\(item.transFat) g"
+        cholesterolLabel.text = "\(item.cholesterol) mg"
+        sodiumLabel.text = "\(item.sodium) mg"
+        totalCarbsLabel.text = "\(item.totalCarbs) g"
+        dietaryFiberLabel.text = "\(item.dietaryFiber) g"
+        sugarsLabel.text = "\(item.sugars) g"
+        proteinLabel.text = "\(item.protein) g"
+        vitaminALabel.text = "\(item.vitaminA)%"
+        vitaminCLabel.text = "\(item.vitaminC)%"
+        calciumLabel.text = "\(item.calcium)%"
+        ironLabel.text = "\(item.iron)%"
+        ingredientLabel.text = item.ingredient
     }
 }

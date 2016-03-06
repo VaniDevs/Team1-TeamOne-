@@ -26,6 +26,11 @@ PODS:
   - Parse (1.12.0):
     - Bolts/Tasks (~> 1.5)
   - PureLayout (3.0.1)
+  - Realm (0.98.3):
+    - Realm/Headers (= 0.98.3)
+  - Realm/Headers (0.98.3)
+  - RealmSwift (0.98.3):
+    - Realm (= 0.98.3)
 
 DEPENDENCIES:
   - Alamofire (~> 3.2)
@@ -36,6 +41,7 @@ DEPENDENCIES:
   - ObjectMapper (~> 1.1)
   - Parse (~> 1.12)
   - PureLayout (~> 3.0)
+  - RealmSwift (~> 0.98)
 
 SPEC CHECKSUMS:
   Alamofire: f11d8624a05f5d39e0c99309b3e600a3ba64298a
@@ -47,5 +53,7 @@ SPEC CHECKSUMS:
   ObjectMapper: 528b1a6677a6acac7747edd508576983e76a9148
   Parse: de2c52a9a1421b91ae7594ab8ce191afd184f19b
   PureLayout: f35f5384c9c4e4479df041dbe33ad7577b71ddfb
+  Realm: c6a7d00221a2d5177810a674aebd40c5e0b70b0f
+  RealmSwift: d6ecad6e4c2a645d6ac956c2c7e9efb375f39c31
 
 COCOAPODS: 0.39.0

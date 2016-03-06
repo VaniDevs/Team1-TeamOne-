@@ -8,6 +8,7 @@
 
 import UIKit
 import ObjectMapper
+import RealmSwift
 
 class ResultViewController: FoodStatsTableViewController {
     
@@ -27,6 +28,14 @@ class ResultViewController: FoodStatsTableViewController {
         }
         if let brandName = item.brandName {
             itemBrandLabel.text = brandName
+        }
+    }
+    
+    @IBAction func addToDonation(sender: AnyObject) {
+        let realm = try! Realm()
+        
+        try! realm.write {
+            realm.add(self.item)
         }
     }
 }
