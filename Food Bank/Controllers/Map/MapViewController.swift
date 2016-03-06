@@ -70,6 +70,9 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
 
         super.viewDidLoad()
         
+        title = "Drop Off"
+        navigationItem.title = "Drop Off Locations"
+        
         let initLocation = CLLocationCoordinate2D(
             latitude: 49.25,
             longitude: -123.12
