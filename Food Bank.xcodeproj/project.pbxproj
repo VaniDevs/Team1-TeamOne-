@@ -18,6 +18,8 @@
 		518A958A1C8B9C9F003E5448 /* SearchItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518A95891C8B9C9F003E5448 /* SearchItem.swift */; };
 		518A958C1C8BAB63003E5448 /* UIView+Inspectables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518A958B1C8BAB63003E5448 /* UIView+Inspectables.swift */; };
 		518A958F1C8BB590003E5448 /* FoodStatsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518A958E1C8BB590003E5448 /* FoodStatsTableViewController.swift */; };
+		518A95911C8BCC48003E5448 /* TopFoodStatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518A95901C8BCC48003E5448 /* TopFoodStatsViewController.swift */; };
+		518A95931C8BCC5A003E5448 /* TopFoodStats.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 518A95921C8BCC5A003E5448 /* TopFoodStats.storyboard */; };
 		51D55E531C8B54290068EDBC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D55E521C8B54290068EDBC /* AppDelegate.swift */; };
 		51D55E5A1C8B54290068EDBC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51D55E581C8B54290068EDBC /* Main.storyboard */; };
 		51D55E5F1C8B54290068EDBC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51D55E5D1C8B54290068EDBC /* LaunchScreen.storyboard */; };
@@ -68,6 +70,8 @@
 		518A95891C8B9C9F003E5448 /* SearchItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchItem.swift; sourceTree = "<group>"; };
 		518A958B1C8BAB63003E5448 /* UIView+Inspectables.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Inspectables.swift"; sourceTree = "<group>"; };
 		518A958E1C8BB590003E5448 /* FoodStatsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodStatsTableViewController.swift; sourceTree = "<group>"; };
+		518A95901C8BCC48003E5448 /* TopFoodStatsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopFoodStatsViewController.swift; sourceTree = "<group>"; };
+		518A95921C8BCC5A003E5448 /* TopFoodStats.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TopFoodStats.storyboard; sourceTree = "<group>"; };
 		51D55E4F1C8B54290068EDBC /* Food Bank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Food Bank.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		51D55E521C8B54290068EDBC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		51D55E591C8B54290068EDBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -149,6 +153,8 @@
 			isa = PBXGroup;
 			children = (
 				518A958E1C8BB590003E5448 /* FoodStatsTableViewController.swift */,
+				518A95901C8BCC48003E5448 /* TopFoodStatsViewController.swift */,
+				518A95921C8BCC5A003E5448 /* TopFoodStats.storyboard */,
 			);
 			path = FoodStats;
 			sourceTree = "<group>";
@@ -429,6 +435,7 @@
 				CE8F0A931C8BA4E7004C5A19 /* Assets.xcassets in Resources */,
 				518A95821C8B8259003E5448 /* Donate.storyboard in Resources */,
 				CE8F0A911C8B9D4D004C5A19 /* CouponView.xib in Resources */,
+				518A95931C8BCC5A003E5448 /* TopFoodStats.storyboard in Resources */,
 				51F0F9171C8B5958003F0398 /* Home.storyboard in Resources */,
 				51F0F91B1C8B59A1003F0398 /* Map.storyboard in Resources */,
 				51F0F91D1C8B59A8003F0398 /* Identifier.storyboard in Resources */,
@@ -503,6 +510,7 @@
 				518A958F1C8BB590003E5448 /* FoodStatsTableViewController.swift in Sources */,
 				51F0F92B1C8B5C83003F0398 /* ScannerViewController.swift in Sources */,
 				5170E6B71C8B625200F9CDCF /* ResultViewController.swift in Sources */,
+				518A95911C8BCC48003E5448 /* TopFoodStatsViewController.swift in Sources */,
 				5691D9721C8B99BE0023A62F /* PhoneTableViewCell.swift in Sources */,
 				5170E6B91C8B665200F9CDCF /* APIClient.swift in Sources */,
 				5691D9661C8B6CF10023A62F /* MapPin.swift in Sources */,
