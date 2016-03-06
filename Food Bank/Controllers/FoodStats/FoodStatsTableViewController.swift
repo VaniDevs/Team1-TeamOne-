@@ -30,10 +30,10 @@ class FoodStatsTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        setupData()
+        setupData(forItem: item)
     }
     
-    func setupData() {
+    func setupData(forItem item: FoodDetail) {
         totalFatLabel.text = "\(item.totalFat) g"
         saturatedFatLabel.text = "\(item.saturatedFat) g"
         transFatLabel.text = "\(item.transFat) g"

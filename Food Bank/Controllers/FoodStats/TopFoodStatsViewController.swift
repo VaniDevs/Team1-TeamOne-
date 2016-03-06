@@ -12,25 +12,24 @@ class TopFoodStatsViewController: FoodStatsTableViewController {
 
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var itemNameLabel: UILabel!
-    @IBOutlet weak var itemDescriptionLabel: UILabel!
+    
+    var image: UIImage!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
     }
     
-    override func setupData() {
-        super.setupData()
+    override func setupData(forItem item: FoodDetail) {
+        super.setupData(forItem: item)
         
-        if let itemName = item.itemName {
-            itemNameLabel.text = itemName
+        if let topFood = item as? TopFood {
+            itemNameLabel.text = topFood.desc
         }
-        if let ingredient = item.ingredient {
-            itemDescriptionLabel.text = ingredient
+        if let image = image {
+            imageView.image = image
         }
-        
         ingredientLabel.text = nil
-        
         tableView.tableFooterView = UIView()
     }
 }
