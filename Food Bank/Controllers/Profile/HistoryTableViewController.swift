@@ -13,11 +13,14 @@ class HistoryTableViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     var foods: Results<FoodDetail>?
+    
+    let dateFormatter = NSDateFormatter()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.tableView.dataSource = self;
+        dateFormatter.dateFormat = "MMM dd, YYYY"
         
         let realm = try! Realm()
         foods = realm.objects(FoodDetail)
@@ -32,12 +35,15 @@ extension HistoryTableViewController: UITableViewDataSource {
     }
 
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        print(foods?.count)
         return foods != nil ? foods!.count : 0
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("HistoryTableViewCell") as! HistoryTableViewCell
-        cell.itemNameLabel.text = "\(foods![indexPath.row].itemName!)"
+        let food = foods![indexPath.row]
+        cell.itemNameLabel.text = "\(food.itemName!)"
+        cell.donationDateLabel.text = "\(dateFormatter.stringFromDate(food.updatedDate))"
         return cell
     }
 }

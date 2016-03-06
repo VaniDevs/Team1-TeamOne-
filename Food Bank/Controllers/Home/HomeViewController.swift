@@ -24,6 +24,8 @@ class HomeViewController: UIViewController {
         collectionView.delegate = self
         collectionView.dataSource = self
         collectionView.backgroundView = UIImageView(image: UIImage(named: "main_bg"))
+        collectionView.contentInset = UIEdgeInsets(top: 5, left: 0, bottom: 5, right: 0)
+        
         
         self.view.bringSubviewToFront(top10)
         barcodeScan.contentEdgeInsets = UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 20)

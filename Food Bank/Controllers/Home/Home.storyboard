@@ -132,7 +132,7 @@
                                     </mask>
                                 </variation>
                             </imageView>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Wa6-eA-3us" userLabel="Most Wanted Foods View">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Wa6-eA-3us" userLabel="Most Wanted Foods View">
                                 <rect key="frame" x="0.0" y="234" width="600" height="317"/>
                                 <collectionViewLayout key="collectionViewLayout" id="3am-vp-OHf" customClass="CircleLayout"/>
                                 <cells>
@@ -266,6 +266,6 @@
         <image name="id_0" width="21" height="20"/>
         <image name="id_1" width="21" height="21"/>
         <image name="text_search" width="144" height="57"/>
-        <image name="top10" width="191" height="132"/>
+        <image name="top10" width="155" height="118"/>
     </resources>
 </document>
