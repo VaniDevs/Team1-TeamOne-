@@ -39,17 +39,17 @@
                                 <rect key="frame" x="0.0" y="64" width="600" height="487"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jvq-u0-yv9">
-                                        <rect key="frame" x="0.0" y="0.0" width="600" height="637"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="610"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="donate_img" translatesAutoresizingMaskIntoConstraints="NO" id="vF8-Hx-adT">
-                                                <rect key="frame" x="0.0" y="0.0" width="600" height="287"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="600" height="260"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="287" id="t5u-gl-w27"/>
+                                                    <constraint firstAttribute="height" constant="260" id="t5u-gl-w27"/>
                                                 </constraints>
                                             </imageView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XQv-AM-QlZ">
-                                                <rect key="frame" x="0.0" y="287" width="600" height="350"/>
+                                                <rect key="frame" x="0.0" y="260" width="600" height="350"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Every dollar counts!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CeY-HP-IT4">
                                                         <rect key="frame" x="16" y="8" width="568" height="28"/>

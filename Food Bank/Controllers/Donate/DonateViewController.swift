@@ -12,7 +12,7 @@ import Braintree
 
 class DonateViewController: UIViewController, BTDropInViewControllerDelegate {
 
-    @IBOutlet var popupView: UIView!
+    @IBOutlet weak var amountField: UITextField!
     
     let donateURL = "http://gvfbs.convio.net/donate"
     let donatePhoneNumber = "6042162329"
@@ -39,7 +39,7 @@ class DonateViewController: UIViewController, BTDropInViewControllerDelegate {
         view.layer.cornerRadius = 4
         
         let mainWindow = UIApplication.sharedApplication().keyWindow
-        view.frame = CGRectMake(0, 0, mainWindow!.frame.size.width - 20, 300)
+        view.frame = CGRectMake(0, 0, mainWindow!.frame.size.width - 20, 330)
         
         let popup = KLCPopup(contentView: view, showType: .SlideInFromTop, dismissType: .SlideOutToBottom, maskType: .Dimmed, dismissOnBackgroundTouch: true, dismissOnContentTouch: false)
         
@@ -55,9 +55,14 @@ class DonateViewController: UIViewController, BTDropInViewControllerDelegate {
         view.layer.cornerRadius = 4
         
         let mainWindow = UIApplication.sharedApplication().keyWindow
-        view.frame = CGRectMake(0, 0, mainWindow!.frame.size.width - 20, 250)
+        view.frame = CGRectMake(0, 0, mainWindow!.frame.size.width - 20, 330)
         
         paymentPopup = KLCPopup(contentView: view, showType: .SlideInFromTop, dismissType: .SlideOutToBottom, maskType: .Dimmed, dismissOnBackgroundTouch: true, dismissOnContentTouch: false)
+        
+        amountField.layer.borderColor = UIColor(red: 151/255.0, green: 151/255.0, blue: 151/255.0, alpha: 1).CGColor
+        amountField.layer.borderWidth = 1
+        amountField.layer.sublayerTransform = CATransform3DMakeTranslation(5, 0, 0)
+        amountField.becomeFirstResponder()
         
         paymentPopup.show()
     }
