@@ -19,6 +19,8 @@ class StoreLocationDetailTableViewController: UITableViewController {
     override func viewDidLoad() {
         
         super.viewDidLoad()
+        
+        title = "Store Details"
     }
 
     // MARK: - Table view data source
