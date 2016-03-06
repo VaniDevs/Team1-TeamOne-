@@ -26,6 +26,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         locationManager = CLLocationManager()
         locationManager?.requestWhenInUseAuthorization()
+        
+        UINavigationBar.appearance().barTintColor = UIColor(red: 0, green: 130/255, blue: 200/255, alpha: 1)
+        UINavigationBar.appearance().titleTextAttributes = [
+            NSForegroundColorAttributeName: UIColor.whiteColor(),
+            NSFontAttributeName: UIFont(name: "Avenir Next", size: 18)!
+        ]
+        
+        UIBarButtonItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.whiteColor()], forState: .Normal)
 
         return true
     }

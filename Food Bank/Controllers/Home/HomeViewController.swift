@@ -11,15 +11,27 @@ import UIKit
 class HomeViewController: UIViewController {
 
     @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var top10: UIImageView!
+    @IBOutlet weak var barcodeScan: UIButton!
+    @IBOutlet weak var textSearch: UIButton!
     
-    let images = [UIImage(named: "pasta-rice"), UIImage(named: "canned-beans"), UIImage(named: "canned-fish-meat"),
-                  UIImage(named: "canned-fruit"), UIImage(named: "canned-vegetables"), UIImage(named: "cereal"),
-                  UIImage(named: "nut-butters"), UIImage(named: "pasta-sauces"), UIImage(named: "stew")]
+    let images = [UIImage(named: "bean"), UIImage(named: "butter"), UIImage(named: "fish"),
+                  UIImage(named: "flakes"), UIImage(named: "fruits"), UIImage(named: "honey"),
+                  UIImage(named: "pasta"), UIImage(named: "soup"), UIImage(named: "veg"),
+                  UIImage(named: "pasta_mac")]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         collectionView.delegate = self
         collectionView.dataSource = self
+        collectionView.backgroundView = UIImageView(image: UIImage(named: "main_bg"))
+        
+        self.view.bringSubviewToFront(top10)
+        barcodeScan.contentEdgeInsets = UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 20)
+        barcodeScan.imageView?.contentMode = .ScaleAspectFit
+        
+        textSearch.contentEdgeInsets = UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 10)
+        textSearch.imageView?.contentMode = .ScaleAspectFit
     }
    
 }

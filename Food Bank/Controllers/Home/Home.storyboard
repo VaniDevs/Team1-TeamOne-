@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="09A-73-x5S">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10109" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="09A-73-x5S">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10083"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -10,9 +11,14 @@
         <scene sceneID="C0R-OL-zTe">
             <objects>
                 <navigationController title="Healthy Food Identifier" id="09A-73-x5S" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Identifier" id="Gha-et-MpO"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="WQu-DR-hTs">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="18"/>
+                        </textAttributes>
                     </navigationBar>
                     <connections>
                         <segue destination="9JE-rZ-mR1" kind="relationship" relationship="rootViewController" id="Iwh-Kb-9pb"/>
@@ -35,28 +41,57 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vId-ux-cuD" userLabel="Top View">
-                                <rect key="frame" x="0.0" y="64" width="600" height="150"/>
+                                <rect key="frame" x="0.0" y="64" width="600" height="170"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Find out food nutrition by..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ucc-23-k5w">
-                                        <rect key="frame" x="12" y="8" width="576" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q2Y-WX-MUE">
-                                        <rect key="frame" x="20" y="48" width="270" height="81.5"/>
-                                        <state key="normal" title="Barcode Scanning"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q2Y-WX-MUE">
+                                        <rect key="frame" x="20" y="54" width="270" height="96"/>
+                                        <state key="normal" image="barcode"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.12880107760429382" green="0.52114731073379517" blue="0.7662995457649231" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <segue destination="n26-k1-wkX" kind="presentation" id="z9l-zo-g9u"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Inh-Dr-FNF">
-                                        <rect key="frame" x="310" y="48" width="270" height="81.5"/>
-                                        <state key="normal" title="Text Input"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Inh-Dr-FNF">
+                                        <rect key="frame" x="310" y="54" width="270" height="96"/>
+                                        <state key="normal" image="text_search"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.12880107760429382" green="0.52114731073379517" blue="0.7662995457649231" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <segue destination="Hsa-Mo-ttL" kind="presentation" id="CgG-nw-S3x"/>
                                         </connections>
                                     </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ucc-23-k5w">
+                                        <rect key="frame" x="12" y="8" width="576" height="26"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="FIND OUT FOOD NUTRITION BY...">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.12880107760429382" green="0.52114731073379517" blue="0.7662995457649231" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="19" name="AvenirNext-Medium"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -69,7 +104,7 @@
                                     <constraint firstAttribute="bottom" secondItem="Inh-Dr-FNF" secondAttribute="bottom" constant="20" id="dVJ-33-pLD"/>
                                     <constraint firstItem="Ucc-23-k5w" firstAttribute="centerX" secondItem="vId-ux-cuD" secondAttribute="centerX" id="eyw-H1-OhP"/>
                                     <constraint firstItem="Q2Y-WX-MUE" firstAttribute="top" secondItem="Ucc-23-k5w" secondAttribute="bottom" constant="20" id="n2j-2I-BTu"/>
-                                    <constraint firstAttribute="height" constant="150" id="oB6-zU-GlE"/>
+                                    <constraint firstAttribute="height" constant="170" id="oB6-zU-GlE"/>
                                     <constraint firstItem="Inh-Dr-FNF" firstAttribute="top" secondItem="vId-ux-cuD" secondAttribute="top" constant="69" id="oY7-S8-VVX"/>
                                     <constraint firstItem="Inh-Dr-FNF" firstAttribute="width" secondItem="Q2Y-WX-MUE" secondAttribute="width" id="u2c-DB-LvG"/>
                                     <constraint firstItem="Q2Y-WX-MUE" firstAttribute="leading" secondItem="vId-ux-cuD" secondAttribute="leading" constant="20" id="wlg-l0-ZfB"/>
@@ -83,15 +118,22 @@
                                     </mask>
                                 </variation>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Our Top 10 Most Wanted Foods" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JtI-LD-pUH">
-                                <rect key="frame" x="249" y="376" width="102" height="61"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="top10" translatesAutoresizingMaskIntoConstraints="NO" id="NbW-Nd-rLU">
+                                <rect key="frame" x="225" y="341" width="150" height="104"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="132" id="S6L-yq-Sib"/>
+                                    <constraint firstAttribute="width" constant="150" id="ULr-7H-BZs"/>
+                                    <constraint firstAttribute="width" secondItem="NbW-Nd-rLU" secondAttribute="height" multiplier="191:132" id="kwT-c7-vRI"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="S6L-yq-Sib"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Wa6-eA-3us" userLabel="Most Wanted Foods View">
-                                <rect key="frame" x="0.0" y="214" width="600" height="386"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <rect key="frame" x="0.0" y="234" width="600" height="317"/>
                                 <collectionViewLayout key="collectionViewLayout" id="3am-vp-OHf" customClass="CircleLayout"/>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CircularImageCell" id="h6r-I1-aPQ" customClass="CircularImageCell" customModule="Food_Bank" customModuleProvider="target">
@@ -122,21 +164,19 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="JtI-LD-pUH" firstAttribute="centerY" secondItem="Wa6-eA-3us" secondAttribute="centerY" id="1Qx-gy-9IT"/>
                             <constraint firstItem="vId-ux-cuD" firstAttribute="top" secondItem="NKN-a3-LmB" secondAttribute="bottom" id="7C1-Dw-zYH"/>
-                            <constraint firstItem="JtI-LD-pUH" firstAttribute="centerY" secondItem="Wa6-eA-3us" secondAttribute="centerY" id="GOL-iq-j65"/>
                             <constraint firstItem="vId-ux-cuD" firstAttribute="leading" secondItem="Ju9-FI-otg" secondAttribute="leading" id="KRN-QS-udS"/>
                             <constraint firstAttribute="trailingMargin" secondItem="vId-ux-cuD" secondAttribute="trailing" constant="-20" id="LGT-Vy-qe5"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Wa6-eA-3us" secondAttribute="trailing" constant="-20" id="LGz-oh-dOr"/>
-                            <constraint firstItem="JtI-LD-pUH" firstAttribute="centerX" secondItem="Wa6-eA-3us" secondAttribute="centerX" id="NNE-dB-PnO"/>
                             <constraint firstItem="t7C-qU-IPw" firstAttribute="top" secondItem="Wa6-eA-3us" secondAttribute="bottom" id="StR-DQ-4Ic"/>
                             <constraint firstItem="Wa6-eA-3us" firstAttribute="top" secondItem="vId-ux-cuD" secondAttribute="bottom" id="VMG-xb-GEd"/>
+                            <constraint firstItem="NbW-Nd-rLU" firstAttribute="centerX" secondItem="Wa6-eA-3us" secondAttribute="centerX" id="a2J-sZ-bcW"/>
                             <constraint firstItem="Wa6-eA-3us" firstAttribute="leading" secondItem="Ju9-FI-otg" secondAttribute="leading" id="aWa-Nf-kbU"/>
                             <constraint firstItem="Wa6-eA-3us" firstAttribute="leading" secondItem="Ju9-FI-otg" secondAttribute="leadingMargin" constant="-20" id="ctr-ig-NR7"/>
                             <constraint firstItem="vId-ux-cuD" firstAttribute="leading" secondItem="Ju9-FI-otg" secondAttribute="leadingMargin" constant="-20" id="m6Y-Ml-8pL"/>
                             <constraint firstAttribute="trailing" secondItem="Wa6-eA-3us" secondAttribute="trailing" id="oKc-Oc-8gh"/>
+                            <constraint firstItem="NbW-Nd-rLU" firstAttribute="centerY" secondItem="Wa6-eA-3us" secondAttribute="centerY" id="oSg-5U-3fD"/>
                             <constraint firstAttribute="trailing" secondItem="vId-ux-cuD" secondAttribute="trailing" id="pSW-ix-dtR"/>
-                            <constraint firstItem="JtI-LD-pUH" firstAttribute="centerX" secondItem="Wa6-eA-3us" secondAttribute="centerX" id="xZ3-gz-as1"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
@@ -144,14 +184,15 @@
                                 <exclude reference="m6Y-Ml-8pL"/>
                                 <exclude reference="LGz-oh-dOr"/>
                                 <exclude reference="ctr-ig-NR7"/>
-                                <exclude reference="GOL-iq-j65"/>
-                                <exclude reference="xZ3-gz-as1"/>
                             </mask>
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Healthy Food Identifier" id="qTf-9C-e3X"/>
                     <connections>
+                        <outlet property="barcodeScan" destination="Q2Y-WX-MUE" id="HrC-80-93C"/>
                         <outlet property="collectionView" destination="Wa6-eA-3us" id="Bqy-Iz-Ruk"/>
+                        <outlet property="textSearch" destination="Inh-Dr-FNF" id="d5d-Vh-mdB"/>
+                        <outlet property="top10" destination="NbW-Nd-rLU" id="Rth-h5-o5v"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K99-T2-pNU" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -211,4 +252,9 @@
             <point key="canvasLocation" x="815" y="958"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="barcode" width="124" height="58"/>
+        <image name="text_search" width="144" height="57"/>
+        <image name="top10" width="191" height="132"/>
+    </resources>
 </document>

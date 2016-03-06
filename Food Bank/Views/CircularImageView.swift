@@ -23,7 +23,5 @@ class CircularImageView: UIImageView {
     private func setup() {
         self.layer.cornerRadius = self.frame.width / 2
         self.layer.masksToBounds = true
-        self.layer.borderWidth = 2
-        self.layer.borderColor = UIColor.grayColor().CGColor
     }
 }
