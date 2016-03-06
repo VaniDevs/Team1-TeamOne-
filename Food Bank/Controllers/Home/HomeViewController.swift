@@ -16,8 +16,7 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var textSearch: UIButton!
     
     let images = [UIImage(named: "bean"), UIImage(named: "butter"), UIImage(named: "fish"),
-                  UIImage(named: "flakes"), UIImage(named: "fruits"), UIImage(named: "honey"),
-                  UIImage(named: "pasta"), UIImage(named: "soup"), UIImage(named: "veg"),
+                  UIImage(named: "flakes"), UIImage(named: "fruits"), UIImage(named: "soup"), UIImage(named: "veg"),
                   UIImage(named: "pasta_mac")]
     
     override func viewDidLoad() {
@@ -25,6 +24,8 @@ class HomeViewController: UIViewController {
         collectionView.delegate = self
         collectionView.dataSource = self
         collectionView.backgroundView = UIImageView(image: UIImage(named: "main_bg"))
+        collectionView.contentInset = UIEdgeInsets(top: 5, left: 0, bottom: 5, right: 0)
+        
         
         self.view.bringSubviewToFront(top10)
         barcodeScan.contentEdgeInsets = UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 20)

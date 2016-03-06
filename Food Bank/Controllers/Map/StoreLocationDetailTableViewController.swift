@@ -72,4 +72,35 @@ class StoreLocationDetailTableViewController: UITableViewController {
             return 0
         }
     }
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        let index = indexPath.row
+        let cellIdentifier = cellIdentifierList[index]
+        
+        switch cellIdentifier {
+        case "directionCell":
+            openMap()
+        case "phoneCell":
+            makePhoneCall()
+        default:
+            break
+        }
+    }
+    
+    private func openMap() {
+        let dCoordinate = storeMapPin?.coordinate
+        if let sCoordinate = userLocation?.coordinate {
+            if let url = NSURL(string: "http://maps.google.com/maps?saddr=\(sCoordinate.latitude),\(sCoordinate.longitude)&daddr=\(dCoordinate?.latitude),\(dCoordinate?.longitude)") {
+                UIApplication.sharedApplication().openURL(url)
+            }
+        } else {
+            if let url = NSURL(string: "http://maps.google.com/maps?z=10&t=m&q=loc:\(Double((dCoordinate?.latitude)!))+\(Double((dCoordinate?.longitude)!))") {
+                UIApplication.sharedApplication().openURL(url)
+            }
+        }
+    }
+    
+    private func makePhoneCall() {
+        
+    }
 }

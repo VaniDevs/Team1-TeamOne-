@@ -88,25 +88,25 @@
                                                         <color key="textColor" red="0.49209189414978027" green="0.36250287294387817" blue="0.10403347760438919" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="## g" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RZL-Hi-z1P">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="## g" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="14" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RZL-Hi-z1P">
                                                         <rect key="frame" x="229" y="50" width="98" height="37"/>
                                                         <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="27"/>
                                                         <color key="textColor" red="0.23724073171615601" green="0.25471949577331543" blue="0.2655317485332489" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="## g" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X0F-aZ-GOR">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="## g" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="14" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="X0F-aZ-GOR">
                                                         <rect key="frame" x="229" y="115" width="98" height="37"/>
                                                         <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="27"/>
                                                         <color key="textColor" red="0.23724073171615601" green="0.25471949577331543" blue="0.2655317485332489" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="## g" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0n9-mF-66b">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="## g" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="14" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0n9-mF-66b">
                                                         <rect key="frame" x="229" y="180" width="98" height="37"/>
                                                         <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="27"/>
                                                         <color key="textColor" red="0.23724073171615601" green="0.25471949577331543" blue="0.2655317485332489" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="## g" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hc2-Bq-iGN">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="## g" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="14" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hc2-Bq-iGN">
                                                         <rect key="frame" x="229" y="245" width="98" height="37"/>
                                                         <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="27"/>
                                                         <color key="textColor" red="0.23724073171615601" green="0.25471949577331543" blue="0.2655317485332489" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -182,12 +182,6 @@
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="30" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eWt-Uq-Jf4">
-                                                <rect key="frame" x="0.0" y="48" width="375" height="89"/>
-                                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="65"/>
-                                                <color key="textColor" red="0.24646979570388794" green="0.68971550464630127" blue="0.7524840235710144" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sZS-bv-Xdo">
                                                 <rect key="frame" x="33" y="490" width="309" height="50"/>
                                                 <color key="backgroundColor" red="0.24646979570388794" green="0.68971550464630127" blue="0.7524840235710144" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -198,6 +192,9 @@
                                                 <state key="normal" title="See Donation List">
                                                     <color key="titleColor" red="0.99963909387588501" green="1" blue="0.99975615739822388" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <segue destination="TEN-zS-xOl" kind="show" id="XmN-Cp-kzY"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3dU-wl-Tov" userLabel="Logo">
                                                 <rect key="frame" x="33" y="550" width="309" height="50"/>
@@ -206,6 +203,12 @@
                                                     <action selector="openWebsite:" destination="tlb-dk-uZf" eventType="touchUpInside" id="8fy-BS-N5h"/>
                                                 </connections>
                                             </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="30" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eWt-Uq-Jf4">
+                                                <rect key="frame" x="0.0" y="48" width="375" height="89"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="65"/>
+                                                <color key="textColor" red="0.24646979570388794" green="0.68971550464630127" blue="0.7524840235710144" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
@@ -266,6 +269,75 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SQu-ub-XdA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="700.5" y="571.5"/>
+        </scene>
+        <!--Donation List History-->
+        <scene sceneID="Vdo-nm-bBd">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="TEN-zS-xOl" customClass="HistoryTableViewController" customModule="Food_Bank" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="woJ-xN-Bc3"/>
+                        <viewControllerLayoutGuide type="bottom" id="nim-Gd-Job"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6Vq-5e-8Xb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="PSZ-jG-qA6">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HistoryTableViewCell" id="vzC-P9-aNt" customClass="HistoryTableViewCell" customModule="Food_Bank" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vzC-P9-aNt" id="42N-l4-IPI">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="asdfasdfasdfasdfasdfasdfasdfasdfsafdasfdasdf" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DZ4-Lo-Acz">
+                                                    <rect key="frame" x="17" y="9" width="297" height="26"/>
+                                                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="19"/>
+                                                    <color key="textColor" red="0.011762749403715134" green="0.011765849776566029" blue="0.011761320754885674" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="760" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UJF-Yg-CHg">
+                                                    <rect key="frame" x="324" y="12" width="34" height="20"/>
+                                                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
+                                                    <color key="textColor" red="0.47839444875717163" green="0.47845298051834106" blue="0.4783673882484436" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="UJF-Yg-CHg" secondAttribute="trailing" constant="17" id="0oQ-MD-5qG"/>
+                                                <constraint firstItem="UJF-Yg-CHg" firstAttribute="centerY" secondItem="42N-l4-IPI" secondAttribute="centerY" id="TYh-SF-j9z"/>
+                                                <constraint firstItem="DZ4-Lo-Acz" firstAttribute="centerY" secondItem="42N-l4-IPI" secondAttribute="centerY" id="XMn-UO-66G"/>
+                                                <constraint firstItem="DZ4-Lo-Acz" firstAttribute="leading" secondItem="42N-l4-IPI" secondAttribute="leading" constant="17" id="iO1-sx-JSY"/>
+                                                <constraint firstItem="UJF-Yg-CHg" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="DZ4-Lo-Acz" secondAttribute="trailing" constant="10" id="nCQ-y7-1jS"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="donationDateLabel" destination="UJF-Yg-CHg" id="Js6-IK-m4b"/>
+                                            <outlet property="itemNameLabel" destination="DZ4-Lo-Acz" id="x5r-zg-c0V"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="PSZ-jG-qA6" firstAttribute="top" secondItem="woJ-xN-Bc3" secondAttribute="bottom" id="7ar-34-frD"/>
+                            <constraint firstItem="nim-Gd-Job" firstAttribute="top" secondItem="PSZ-jG-qA6" secondAttribute="bottom" id="JH4-Uz-2AQ"/>
+                            <constraint firstItem="PSZ-jG-qA6" firstAttribute="leading" secondItem="6Vq-5e-8Xb" secondAttribute="leading" id="UmK-Q6-r95"/>
+                            <constraint firstAttribute="trailing" secondItem="PSZ-jG-qA6" secondAttribute="trailing" id="qKR-RY-6f4"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Donation List History" id="dX4-mp-qtx"/>
+                    <connections>
+                        <outlet property="tableView" destination="PSZ-jG-qA6" id="yV6-AJ-e54"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JS5-SK-cFj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1226.5" y="571.5"/>
         </scene>
     </scenes>
     <resources>
