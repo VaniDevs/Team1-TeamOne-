@@ -4,6 +4,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10083"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Profile-->
@@ -192,6 +193,11 @@
                                                 <state key="normal" title="See Donation List">
                                                     <color key="titleColor" red="0.99963909387588501" green="1" blue="0.99975615739822388" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="4"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <segue destination="TEN-zS-xOl" kind="show" id="XmN-Cp-kzY"/>
                                                 </connections>
@@ -293,8 +299,8 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="asdfasdfasdfasdfasdfasdfasdfasdfsafdasfdasdf" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DZ4-Lo-Acz">
-                                                    <rect key="frame" x="17" y="9" width="297" height="26"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="asdfasdfasdfasdfasdfasdfasdfasdfsafdasfdasdf" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="DZ4-Lo-Acz">
+                                                    <rect key="frame" x="17" y="9" width="290" height="26"/>
                                                     <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="19"/>
                                                     <color key="textColor" red="0.011762749403715134" green="0.011765849776566029" blue="0.011761320754885674" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -308,11 +314,18 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstAttribute="trailing" secondItem="UJF-Yg-CHg" secondAttribute="trailing" constant="17" id="0oQ-MD-5qG"/>
+                                                <constraint firstItem="DZ4-Lo-Acz" firstAttribute="top" secondItem="42N-l4-IPI" secondAttribute="topMargin" constant="1" id="Adh-Qi-m4x"/>
                                                 <constraint firstItem="UJF-Yg-CHg" firstAttribute="centerY" secondItem="42N-l4-IPI" secondAttribute="centerY" id="TYh-SF-j9z"/>
                                                 <constraint firstItem="DZ4-Lo-Acz" firstAttribute="centerY" secondItem="42N-l4-IPI" secondAttribute="centerY" id="XMn-UO-66G"/>
                                                 <constraint firstItem="DZ4-Lo-Acz" firstAttribute="leading" secondItem="42N-l4-IPI" secondAttribute="leading" constant="17" id="iO1-sx-JSY"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="DZ4-Lo-Acz" secondAttribute="bottom" id="llb-Ze-Qs9"/>
                                                 <constraint firstItem="UJF-Yg-CHg" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="DZ4-Lo-Acz" secondAttribute="trailing" constant="10" id="nCQ-y7-1jS"/>
                                             </constraints>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="XMn-UO-66G"/>
+                                                </mask>
+                                            </variation>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="donationDateLabel" destination="UJF-Yg-CHg" id="Js6-IK-m4b"/>
