@@ -42,6 +42,8 @@
 		5691D9701C8B99B20023A62F /* DirectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5691D96F1C8B99B20023A62F /* DirectionTableViewCell.swift */; };
 		5691D9721C8B99BE0023A62F /* PhoneTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5691D9711C8B99BE0023A62F /* PhoneTableViewCell.swift */; };
 		5691D9741C8B99CE0023A62F /* HoursTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5691D9731C8B99CE0023A62F /* HoursTableViewCell.swift */; };
+		CE6C63451C8CB71F00973EBC /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6C63441C8CB71F00973EBC /* HistoryTableViewCell.swift */; };
+		CE6C63471C8CB77400973EBC /* HistoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6C63461C8CB77400973EBC /* HistoryTableViewController.swift */; };
 		CE8F0A7F1C8B6726004C5A19 /* CircularImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8F0A7E1C8B6726004C5A19 /* CircularImageView.swift */; };
 		CE8F0A841C8B6B99004C5A19 /* CircleLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8F0A831C8B6B99004C5A19 /* CircleLayout.m */; };
 		CE8F0A8A1C8B7189004C5A19 /* CircularImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8F0A891C8B7189004C5A19 /* CircularImageCell.swift */; };
@@ -102,6 +104,8 @@
 		5691D9711C8B99BE0023A62F /* PhoneTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneTableViewCell.swift; sourceTree = "<group>"; };
 		5691D9731C8B99CE0023A62F /* HoursTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HoursTableViewCell.swift; sourceTree = "<group>"; };
 		91876E1D42C49FDAB789C135 /* Pods-Food Bank.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Food Bank.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Food Bank/Pods-Food Bank.debug.xcconfig"; sourceTree = "<group>"; };
+		CE6C63441C8CB71F00973EBC /* HistoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryTableViewCell.swift; sourceTree = "<group>"; };
+		CE6C63461C8CB77400973EBC /* HistoryTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryTableViewController.swift; sourceTree = "<group>"; };
 		CE8F0A7E1C8B6726004C5A19 /* CircularImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularImageView.swift; sourceTree = "<group>"; };
 		CE8F0A811C8B6B99004C5A19 /* Food Bank-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Food Bank-Bridging-Header.h"; sourceTree = "<group>"; };
 		CE8F0A821C8B6B99004C5A19 /* CircleLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleLayout.h; sourceTree = "<group>"; };
@@ -260,6 +264,7 @@
 			children = (
 				51F0F9181C8B5999003F0398 /* Profile.storyboard */,
 				51F0F9261C8B5C36003F0398 /* ProfileViewController.swift */,
+				CE6C63461C8CB77400973EBC /* HistoryTableViewController.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -329,6 +334,7 @@
 			children = (
 				CE8F0A891C8B7189004C5A19 /* CircularImageCell.swift */,
 				CEBEBEF71C8C9B7800FF1058 /* NuritionCollectionViewCell.swift */,
+				CE6C63441C8CB71F00973EBC /* HistoryTableViewCell.swift */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -517,6 +523,7 @@
 				516B467A1C8C073B00314119 /* DataStore.swift in Sources */,
 				51D55E531C8B54290068EDBC /* AppDelegate.swift in Sources */,
 				518A95841C8B8265003E5448 /* DonateViewController.swift in Sources */,
+				CE6C63471C8CB77400973EBC /* HistoryTableViewController.swift in Sources */,
 				518A958F1C8BB590003E5448 /* FoodStatsTableViewController.swift in Sources */,
 				51F0F92B1C8B5C83003F0398 /* ScannerViewController.swift in Sources */,
 				5170E6B71C8B625200F9CDCF /* ResultViewController.swift in Sources */,
@@ -531,6 +538,7 @@
 				51F0F9271C8B5C36003F0398 /* ProfileViewController.swift in Sources */,
 				5691D9741C8B99CE0023A62F /* HoursTableViewCell.swift in Sources */,
 				51F0F9211C8B5B0F003F0398 /* HomeViewController.swift in Sources */,
+				CE6C63451C8CB71F00973EBC /* HistoryTableViewCell.swift in Sources */,
 				5691D9701C8B99B20023A62F /* DirectionTableViewCell.swift in Sources */,
 				5691D96E1C8B99A50023A62F /* MapTableViewCell.swift in Sources */,
 				5170E6BE1C8B78B100F9CDCF /* FoodDetail.swift in Sources */,
