@@ -76,12 +76,12 @@
         <scene sceneID="V2k-Ev-rSa">
             <objects>
                 <tableViewController storyboardIdentifier="StoreLocationDetailTableView" id="jWa-PW-c6j" customClass="StoreLocationDetailTableViewController" customModule="Food_Bank" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Qt9-cv-wXq">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Qt9-cv-wXq">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="mapCell" rowHeight="250" id="Zv5-ou-7cK" customClass="MapTableViewCell" customModule="Food_Bank" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="mapCell" rowHeight="250" id="Zv5-ou-7cK" customClass="MapTableViewCell" customModule="Food_Bank" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="600" height="250"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Zv5-ou-7cK" id="aB0-rR-D8i">
@@ -103,7 +103,7 @@
                                     <outlet property="storeMapView" destination="lyc-Ho-fQW" id="0wt-ZF-hPW"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="directionCell" rowHeight="100" id="ydl-ex-eEn" customClass="DirectionTableViewCell" customModule="Food_Bank" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="directionCell" rowHeight="100" id="ydl-ex-eEn" customClass="DirectionTableViewCell" customModule="Food_Bank" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="278" width="600" height="100"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ydl-ex-eEn" id="SFe-QS-N60">
@@ -144,7 +144,7 @@
                                     <outlet property="distance" destination="oUB-je-Ce6" id="BDx-9r-Nq0"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="phoneCell" rowHeight="70" id="qeN-ar-Rhg" customClass="PhoneTableViewCell" customModule="Food_Bank" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="phoneCell" rowHeight="70" id="qeN-ar-Rhg" customClass="PhoneTableViewCell" customModule="Food_Bank" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="378" width="600" height="70"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qeN-ar-Rhg" id="f2Y-jD-TSe">
@@ -172,7 +172,7 @@
                                     </constraints>
                                 </tableViewCellContentView>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="hoursCell" rowHeight="210" id="9Ar-IF-8G4" customClass="HoursTableViewCell" customModule="Food_Bank" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="hoursCell" rowHeight="210" id="9Ar-IF-8G4" customClass="HoursTableViewCell" customModule="Food_Bank" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="448" width="600" height="210"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9Ar-IF-8G4" id="XXV-pU-Wy2">

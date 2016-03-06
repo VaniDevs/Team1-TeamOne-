@@ -124,7 +124,7 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
     
     func mapPinDetailedButtonClicked(sender:UIButton!) {let vc = self.storyboard?.instantiateViewControllerWithIdentifier("StoreLocationDetailTableView") as! StoreLocationDetailTableViewController
         
-        vc.storeMapPin = storeLocationMapView.selectedAnnotations.first as! MapPin
+        vc.storeMapPin = storeLocationMapView.selectedAnnotations.first as? MapPin
         vc.userLocation = self.storeLocationMapView.userLocation.location
         self.navigationController?.pushViewController(vc, animated: true)
         
