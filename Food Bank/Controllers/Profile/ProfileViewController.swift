@@ -18,8 +18,8 @@ class ProfileViewController: UIViewController {
     
     var stats: [String: Float] = [:]
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
         
         stats["sodium"] = 0
         stats["sugar"] = 0
