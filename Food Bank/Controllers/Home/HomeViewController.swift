@@ -16,8 +16,7 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var textSearch: UIButton!
     
     let images = [UIImage(named: "bean"), UIImage(named: "butter"), UIImage(named: "fish"),
-                  UIImage(named: "flakes"), UIImage(named: "fruits"), UIImage(named: "honey"),
-                  UIImage(named: "pasta"), UIImage(named: "soup"), UIImage(named: "veg"),
+                  UIImage(named: "flakes"), UIImage(named: "fruits"), UIImage(named: "soup"), UIImage(named: "veg"),
                   UIImage(named: "pasta_mac")]
     
     override func viewDidLoad() {
