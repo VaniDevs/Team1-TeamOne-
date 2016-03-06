@@ -7,16 +7,18 @@
 //
 
 import UIKit
+import CoreLocation
 
 class StoreLocationDetailTableViewController: UITableViewController {
 
     let cellIdentifierList = ["mapCell", "directionCell", "phoneCell", "hoursCell"]
     
     var storeMapPin: MapPin?
+    var userLocation: CLLocation?
     
     override func viewDidLoad() {
-        super.viewDidLoad()
         
+        super.viewDidLoad()
     }
 
     // MARK: - Table view data source
@@ -37,6 +39,8 @@ class StoreLocationDetailTableViewController: UITableViewController {
             
         case "directionCell":
             let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath) as! DirectionTableViewCell
+            
+            cell.configure(storeMapPin, userLocation: userLocation)
             return cell
             
         case "phoneCell":

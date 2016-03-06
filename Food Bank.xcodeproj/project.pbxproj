@@ -652,7 +652,7 @@
 				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = "Food Bank/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.team1.Food-Bank";
+				PRODUCT_BUNDLE_IDENTIFIER = com.team1.FoodBank;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Food Bank/Views/Food Bank-Bridging-Header.h";
@@ -671,7 +671,7 @@
 				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = "Food Bank/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.team1.Food-Bank";
+				PRODUCT_BUNDLE_IDENTIFIER = com.team1.FoodBank;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Food Bank/Views/Food Bank-Bridging-Header.h";

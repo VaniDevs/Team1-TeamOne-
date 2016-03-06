@@ -14,7 +14,6 @@ import Parse
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    var locationManager: CLLocationManager?
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
@@ -23,9 +22,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let settings = UIUserNotificationSettings(forTypes: [.Alert, .Badge, .Sound], categories: nil)
         application.registerUserNotificationSettings(settings)
         application.registerForRemoteNotifications()
-        
-        locationManager = CLLocationManager()
-        locationManager?.requestWhenInUseAuthorization()
         
         UINavigationBar.appearance().barTintColor = UIColor(red: 0, green: 130/255, blue: 200/255, alpha: 1)
         UINavigationBar.appearance().titleTextAttributes = [
