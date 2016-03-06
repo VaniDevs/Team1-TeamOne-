@@ -48,6 +48,7 @@
 		CE8F0A911C8B9D4D004C5A19 /* CouponView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE8F0A901C8B9D4D004C5A19 /* CouponView.xib */; };
 		CE8F0A931C8BA4E7004C5A19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE8F0A921C8BA4E7004C5A19 /* Assets.xcassets */; };
 		CE8F0A951C8BB242004C5A19 /* AmountView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE8F0A941C8BB242004C5A19 /* AmountView.xib */; };
+		CEBEBEF81C8C9B7800FF1058 /* NuritionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBEBEF71C8C9B7800FF1058 /* NuritionCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,6 +110,7 @@
 		CE8F0A901C8B9D4D004C5A19 /* CouponView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CouponView.xib; sourceTree = "<group>"; };
 		CE8F0A921C8BA4E7004C5A19 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE8F0A941C8BB242004C5A19 /* AmountView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AmountView.xib; sourceTree = "<group>"; };
+		CEBEBEF71C8C9B7800FF1058 /* NuritionCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NuritionCollectionViewCell.swift; sourceTree = "<group>"; };
 		EDA8C754DDE33AF7B34E2D28 /* Pods_Food_Bank.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Food_Bank.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -326,6 +328,7 @@
 			isa = PBXGroup;
 			children = (
 				CE8F0A891C8B7189004C5A19 /* CircularImageCell.swift */,
+				CEBEBEF71C8C9B7800FF1058 /* NuritionCollectionViewCell.swift */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -534,6 +537,7 @@
 				516B467C1C8C990F00314119 /* StoreDetail.swift in Sources */,
 				5691D9681C8B814E0023A62F /* StoreLocationDetailTableViewController.swift in Sources */,
 				5691D96B1C8B867C0023A62F /* MapViewController.swift in Sources */,
+				CEBEBEF81C8C9B7800FF1058 /* NuritionCollectionViewCell.swift in Sources */,
 				518A958C1C8BAB63003E5448 /* UIView+Inspectables.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
