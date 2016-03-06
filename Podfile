@@ -11,6 +11,8 @@ pod 'Parse', '~> 1.12'
 pod 'MTBBarcodeScanner', '~> 1.9'
 pod 'ObjectMapper', '~> 1.1'
 pod 'DZNEmptyDataSet'
+pod 'KLCPopup'
+pod 'Braintree'
 end
 
 target 'Food BankTests' do

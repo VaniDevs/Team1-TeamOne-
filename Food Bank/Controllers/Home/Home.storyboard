@@ -6,10 +6,10 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Home-->
+        <!--Healthy Food Identifier-->
         <scene sceneID="C0R-OL-zTe">
             <objects>
-                <navigationController title="Home" id="09A-73-x5S" sceneMemberID="viewController">
+                <navigationController title="Healthy Food Identifier" id="09A-73-x5S" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="WQu-DR-hTs">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -22,7 +22,7 @@
             </objects>
             <point key="canvasLocation" x="-585" y="410"/>
         </scene>
-        <!--Home View Controller-->
+        <!--Healthy Food Identifier-->
         <scene sceneID="11o-8u-Dx7">
             <objects>
                 <viewController id="9JE-rZ-mR1" customClass="HomeViewController" customModule="Food_Bank" customModuleProvider="target" sceneMemberID="viewController">
@@ -149,7 +149,7 @@
                             </mask>
                         </variation>
                     </view>
-                    <navigationItem key="navigationItem" id="q8y-9z-Ymv"/>
+                    <navigationItem key="navigationItem" title="Healthy Food Identifier" id="qTf-9C-e3X"/>
                     <connections>
                         <outlet property="collectionView" destination="Wa6-eA-3us" id="Bqy-Iz-Ruk"/>
                     </connections>
