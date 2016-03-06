@@ -30,6 +30,10 @@
 		5691D9681C8B814E0023A62F /* StoreLocationDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5691D9671C8B814E0023A62F /* StoreLocationDetailTableViewController.swift */; };
 		5691D96A1C8B852E0023A62F /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5691D9691C8B852E0023A62F /* MapKit.framework */; };
 		5691D96B1C8B867C0023A62F /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F0F9241C8B5C2C003F0398 /* MapViewController.swift */; };
+		5691D96E1C8B99A50023A62F /* MapTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5691D96D1C8B99A50023A62F /* MapTableViewCell.swift */; };
+		5691D9701C8B99B20023A62F /* DirectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5691D96F1C8B99B20023A62F /* DirectionTableViewCell.swift */; };
+		5691D9721C8B99BE0023A62F /* PhoneTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5691D9711C8B99BE0023A62F /* PhoneTableViewCell.swift */; };
+		5691D9741C8B99CE0023A62F /* HoursTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5691D9731C8B99CE0023A62F /* HoursTableViewCell.swift */; };
 		CE8F0A7F1C8B6726004C5A19 /* CircularImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8F0A7E1C8B6726004C5A19 /* CircularImageView.swift */; };
 		CE8F0A841C8B6B99004C5A19 /* CircleLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8F0A831C8B6B99004C5A19 /* CircleLayout.m */; };
 		CE8F0A8A1C8B7189004C5A19 /* CircularImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8F0A891C8B7189004C5A19 /* CircularImageCell.swift */; };
@@ -76,6 +80,10 @@
 		5691D9651C8B6CF10023A62F /* MapPin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapPin.swift; sourceTree = "<group>"; };
 		5691D9671C8B814E0023A62F /* StoreLocationDetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreLocationDetailTableViewController.swift; sourceTree = "<group>"; };
 		5691D9691C8B852E0023A62F /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		5691D96D1C8B99A50023A62F /* MapTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapTableViewCell.swift; sourceTree = "<group>"; };
+		5691D96F1C8B99B20023A62F /* DirectionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DirectionTableViewCell.swift; sourceTree = "<group>"; };
+		5691D9711C8B99BE0023A62F /* PhoneTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneTableViewCell.swift; sourceTree = "<group>"; };
+		5691D9731C8B99CE0023A62F /* HoursTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HoursTableViewCell.swift; sourceTree = "<group>"; };
 		91876E1D42C49FDAB789C135 /* Pods-Food Bank.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Food Bank.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Food Bank/Pods-Food Bank.debug.xcconfig"; sourceTree = "<group>"; };
 		CE8F0A7E1C8B6726004C5A19 /* CircularImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularImageView.swift; sourceTree = "<group>"; };
 		CE8F0A811C8B6B99004C5A19 /* Food Bank-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Food Bank-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -207,6 +215,7 @@
 		51D55E781C8B55C20068EDBC /* Map */ = {
 			isa = PBXGroup;
 			children = (
+				5691D96C1C8B99820023A62F /* Cells */,
 				51F0F91A1C8B59A1003F0398 /* Map.storyboard */,
 				5691D9671C8B814E0023A62F /* StoreLocationDetailTableViewController.swift */,
 				51F0F9241C8B5C2C003F0398 /* MapViewController.swift */,
@@ -249,6 +258,17 @@
 				CE8F0A8E1C8B9623004C5A19 /* RoundedButton.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		5691D96C1C8B99820023A62F /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				5691D96D1C8B99A50023A62F /* MapTableViewCell.swift */,
+				5691D96F1C8B99B20023A62F /* DirectionTableViewCell.swift */,
+				5691D9711C8B99BE0023A62F /* PhoneTableViewCell.swift */,
+				5691D9731C8B99CE0023A62F /* HoursTableViewCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		B948923D88E6813F54FB817C /* Pods */ = {
@@ -461,13 +481,17 @@
 				518A95841C8B8265003E5448 /* DonateViewController.swift in Sources */,
 				51F0F92B1C8B5C83003F0398 /* IdentifierViewController.swift in Sources */,
 				5170E6B71C8B625200F9CDCF /* ResultViewController.swift in Sources */,
+				5691D9721C8B99BE0023A62F /* PhoneTableViewCell.swift in Sources */,
 				5170E6B91C8B665200F9CDCF /* APIClient.swift in Sources */,
 				5691D9661C8B6CF10023A62F /* MapPin.swift in Sources */,
 				CE8F0A8A1C8B7189004C5A19 /* CircularImageCell.swift in Sources */,
 				CE8F0A841C8B6B99004C5A19 /* CircleLayout.m in Sources */,
 				CE8F0A7F1C8B6726004C5A19 /* CircularImageView.swift in Sources */,
 				51F0F9271C8B5C36003F0398 /* ProfileViewController.swift in Sources */,
+				5691D9741C8B99CE0023A62F /* HoursTableViewCell.swift in Sources */,
 				51F0F9211C8B5B0F003F0398 /* HomeViewController.swift in Sources */,
+				5691D9701C8B99B20023A62F /* DirectionTableViewCell.swift in Sources */,
+				5691D96E1C8B99A50023A62F /* MapTableViewCell.swift in Sources */,
 				5170E6BE1C8B78B100F9CDCF /* FoodDetail.swift in Sources */,
 				5691D9681C8B814E0023A62F /* StoreLocationDetailTableViewController.swift in Sources */,
 				5691D96B1C8B867C0023A62F /* MapViewController.swift in Sources */,

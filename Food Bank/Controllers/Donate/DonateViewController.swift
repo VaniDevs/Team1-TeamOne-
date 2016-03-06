@@ -33,7 +33,7 @@ class DonateViewController: UIViewController {
         view.layer.cornerRadius = 4
         
         let mainWindow = UIApplication.sharedApplication().keyWindow
-        view.frame = CGRectMake(0, 0, mainWindow!.frame.size.width - 20, 270)
+        view.frame = CGRectMake(0, 0, mainWindow!.frame.size.width - 20, 300)
         
         let popup = KLCPopup(contentView: view, showType: .SlideInFromTop, dismissType: .SlideOutToBottom, maskType: .Dimmed, dismissOnBackgroundTouch: true, dismissOnContentTouch: false)
         
