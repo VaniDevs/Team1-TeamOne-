@@ -20,12 +20,21 @@ class HistoryTableViewController: UIViewController {
         super.viewDidLoad()
         
         self.tableView.dataSource = self;
+        self.tableView.delegate = self;
         dateFormatter.dateFormat = "MMM dd, YYYY"
         
         let realm = try! Realm()
         foods = realm.objects(FoodDetail)
         
         self.tableView.reloadData()
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "showFoodHistory" {
+            if let dvc = segue.destinationViewController as? TopFoodStatsViewController {
+                dvc.item = foods![tableView.indexPathForSelectedRow!.row]
+            }
+        }
     }
 }
 
@@ -45,5 +54,13 @@ extension HistoryTableViewController: UITableViewDataSource {
         cell.itemNameLabel.text = "\(food.itemName!)"
         cell.donationDateLabel.text = "\(dateFormatter.stringFromDate(food.updatedDate))"
         return cell
+    }
+}
+
+extension HistoryTableViewController: UITableViewDelegate {
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        let vc = UIStoryboard(name: "Result", bundle: nil).instantiateInitialViewController() as! ResultViewController
+        vc.item = foods![indexPath.row]
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 }
