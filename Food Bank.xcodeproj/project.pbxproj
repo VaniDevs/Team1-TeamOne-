@@ -41,7 +41,6 @@
 		CE8F0A7F1C8B6726004C5A19 /* CircularImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8F0A7E1C8B6726004C5A19 /* CircularImageView.swift */; };
 		CE8F0A841C8B6B99004C5A19 /* CircleLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8F0A831C8B6B99004C5A19 /* CircleLayout.m */; };
 		CE8F0A8A1C8B7189004C5A19 /* CircularImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8F0A891C8B7189004C5A19 /* CircularImageCell.swift */; };
-		CE8F0A8F1C8B9623004C5A19 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8F0A8E1C8B9623004C5A19 /* RoundedButton.swift */; };
 		CE8F0A911C8B9D4D004C5A19 /* CouponView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE8F0A901C8B9D4D004C5A19 /* CouponView.xib */; };
 		CE8F0A931C8BA4E7004C5A19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE8F0A921C8BA4E7004C5A19 /* Assets.xcassets */; };
 		CE8F0A951C8BB242004C5A19 /* AmountView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE8F0A941C8BB242004C5A19 /* AmountView.xib */; };
@@ -99,7 +98,6 @@
 		CE8F0A821C8B6B99004C5A19 /* CircleLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleLayout.h; sourceTree = "<group>"; };
 		CE8F0A831C8B6B99004C5A19 /* CircleLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleLayout.m; sourceTree = "<group>"; };
 		CE8F0A891C8B7189004C5A19 /* CircularImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularImageCell.swift; sourceTree = "<group>"; };
-		CE8F0A8E1C8B9623004C5A19 /* RoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		CE8F0A901C8B9D4D004C5A19 /* CouponView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CouponView.xib; sourceTree = "<group>"; };
 		CE8F0A921C8BA4E7004C5A19 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE8F0A941C8BB242004C5A19 /* AmountView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AmountView.xib; sourceTree = "<group>"; };
@@ -278,7 +276,6 @@
 				CE8F0A851C8B6D7C004C5A19 /* Cells */,
 				CE8F0A801C8B6B62004C5A19 /* CircleLayout */,
 				CE8F0A7E1C8B6726004C5A19 /* CircularImageView.swift */,
-				CE8F0A8E1C8B9623004C5A19 /* RoundedButton.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -502,7 +499,6 @@
 			files = (
 				518A958A1C8B9C9F003E5448 /* SearchItem.swift in Sources */,
 				51D55E531C8B54290068EDBC /* AppDelegate.swift in Sources */,
-				CE8F0A8F1C8B9623004C5A19 /* RoundedButton.swift in Sources */,
 				518A95841C8B8265003E5448 /* DonateViewController.swift in Sources */,
 				518A958F1C8BB590003E5448 /* FoodStatsTableViewController.swift in Sources */,
 				51F0F92B1C8B5C83003F0398 /* ScannerViewController.swift in Sources */,
