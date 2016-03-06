@@ -31,6 +31,7 @@ class FoodDetail: Object, Mappable {
     dynamic var iron: Float = 0
     dynamic var ingredient: String?
     dynamic var servingsPerContainer: Int = 0
+    dynamic var updatedDate = NSDate()
     
     required convenience init?(_ map: Map) {
         self.init()
