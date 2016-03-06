@@ -10,6 +10,8 @@
         <scene sceneID="VY3-7g-Mb3">
             <objects>
                 <navigationController title="Map" id="DXR-Mp-BdF" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Map" image="map_0" selectedImage="map_1" id="82W-NE-0A2"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="pxh-6v-91d">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -114,20 +116,14 @@
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="1-111 West Broadway" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Wu-pO-8bi">
-                                            <rect key="frame" x="48" y="36" width="159" height="22"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1-111 West Broadway" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Wu-pO-8bi">
+                                            <rect key="frame" x="48" y="37" width="159" height="22"/>
                                             <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="16"/>
                                             <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Vancouver, BC V5Y 1P4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="594-IE-77n">
-                                            <rect key="frame" x="48" y="58" width="170" height="22"/>
-                                            <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="16"/>
-                                            <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="0.2 km" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oUB-je-Ce6">
-                                            <rect key="frame" x="543" y="36" width="49" height="22"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oUB-je-Ce6">
+                                            <rect key="frame" x="592" y="48" width="0.0" height="0.0"/>
                                             <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="16"/>
                                             <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
@@ -138,12 +134,14 @@
                                         <constraint firstItem="0Wu-pO-8bi" firstAttribute="leading" secondItem="SFe-QS-N60" secondAttribute="leadingMargin" constant="40" id="27J-by-Tk8"/>
                                         <constraint firstItem="riO-3S-GOk" firstAttribute="top" secondItem="SFe-QS-N60" secondAttribute="topMargin" id="4Vr-3d-ri6"/>
                                         <constraint firstItem="oUB-je-Ce6" firstAttribute="trailing" secondItem="SFe-QS-N60" secondAttribute="trailingMargin" id="J0G-yh-sIw"/>
-                                        <constraint firstItem="594-IE-77n" firstAttribute="top" secondItem="0Wu-pO-8bi" secondAttribute="bottom" id="NiW-3H-fTX"/>
                                         <constraint firstItem="riO-3S-GOk" firstAttribute="leading" secondItem="SFe-QS-N60" secondAttribute="leadingMargin" constant="40" id="TzJ-bS-7fU"/>
-                                        <constraint firstItem="594-IE-77n" firstAttribute="leading" secondItem="SFe-QS-N60" secondAttribute="leadingMargin" constant="40" id="W9h-4d-Xu0"/>
                                         <constraint firstItem="oUB-je-Ce6" firstAttribute="centerY" secondItem="0Wu-pO-8bi" secondAttribute="centerY" id="t0Y-4m-FBu"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="address" destination="0Wu-pO-8bi" id="4S9-GG-7BQ"/>
+                                    <outlet property="distance" destination="oUB-je-Ce6" id="BDx-9r-Nq0"/>
+                                </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="phoneCell" rowHeight="70" id="qeN-ar-Rhg" customClass="PhoneTableViewCell" customModule="Food_Bank" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="378" width="600" height="70"/>
@@ -329,4 +327,8 @@
             <point key="canvasLocation" x="1424" y="464"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="map_0" width="33" height="28"/>
+        <image name="map_1" width="33" height="28"/>
+    </resources>
 </document>

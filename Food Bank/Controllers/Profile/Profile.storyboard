@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ced-jb-Chl">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10109" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ced-jb-Chl">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10083"/>
     </dependencies>
     <scenes>
         <!--Profile-->
         <scene sceneID="uZG-2e-a7g">
             <objects>
                 <navigationController title="Profile" id="ced-jb-Chl" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Achievement" image="achieve_0" selectedImage="achieve_1" id="Efb-36-gcp"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="K8l-Xm-jVM">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -41,4 +43,8 @@
             <point key="canvasLocation" x="701" y="572"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="achieve_0" width="25" height="26"/>
+        <image name="achieve_1" width="25" height="26"/>
+    </resources>
 </document>

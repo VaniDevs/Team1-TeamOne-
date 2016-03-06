@@ -12,7 +12,7 @@ import MapKit
 class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
     
     @IBOutlet var storeLocationMapView: MKMapView!
-    
+
     let addressBook = [
         "370 E Broadway, Vancouver",
         "1675 Robson Street, Vancouver",
@@ -32,7 +32,6 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
         )
         let span = MKCoordinateSpanMake(0.5, 0.5)
         storeLocationMapView.setRegion(MKCoordinateRegion(center: initLocation, span: span), animated: true)
-        
     }
     
     private func loadStoreLocations() {
@@ -49,7 +48,7 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
 
                     let storeLocationPin = MapPin(myCoordinate: coordinate!)
                     storeLocationPin.title = placemark.name
-                    storeLocationPin.address = placemark.addressDictionary?.description
+                    storeLocationPin.address = placemark.subThoroughfare! + " " + placemark.thoroughfare! + "\n" + placemark.locality! + ", " + placemark.administrativeArea! + " " + placemark.postalCode!
                     self.storeLocationMapView.addAnnotation(storeLocationPin)
                 }
             })
@@ -61,13 +60,13 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
     
     func mapView(mapView: MKMapView, viewForAnnotation annotation: MKAnnotation) -> MKAnnotationView? {
         if let annotation = annotation as? MapPin {
+            
             var view: MKPinAnnotationView
 
             view = MKPinAnnotationView(annotation: annotation, reuseIdentifier: "pin")
             view.canShowCallout = true
             view.calloutOffset = CGPoint(x: -5, y: 5)
             let detailButton = UIButton(type: .DetailDisclosure)
-            clickedMapPin = annotation
             detailButton.addTarget(self, action: "mapPinDetailedButtonClicked:", forControlEvents: UIControlEvents.TouchUpInside)
             view.rightCalloutAccessoryView = detailButton as UIView
             
@@ -77,10 +76,15 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
         return nil
     }
     
+    func mapView(mapView: MKMapView, didSelectAnnotationView view: MKAnnotationView) {
+        clickedMapPin = view.annotation as? MapPin
+    }
+    
     func mapPinDetailedButtonClicked(sender:UIButton!) {
         let vc = storyboard?.instantiateViewControllerWithIdentifier("StoreLocationDetailTableView") as! StoreLocationDetailTableViewController
 
         vc.storeMapPin = clickedMapPin
+        vc.userLocation = storeLocationMapView.userLocation.location
         navigationController?.pushViewController(vc, animated: true)
     }
     
