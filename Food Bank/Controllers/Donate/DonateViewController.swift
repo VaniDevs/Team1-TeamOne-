@@ -8,17 +8,23 @@
 
 import UIKit
 import KLCPopup
+import Braintree
 
-class DonateViewController: UIViewController {
+class DonateViewController: UIViewController, BTDropInViewControllerDelegate {
 
     @IBOutlet var popupView: UIView!
     
     let donateURL = "http://gvfbs.convio.net/donate"
     let donatePhoneNumber = "6042162329"
     
+    var braintreeClient = BTAPIClient(authorization: "sandbox_94ntpbmv_g945wnx6z3hzk2yp")!
+    
+    var paymentPopup: KLCPopup!
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
     }
 
@@ -44,17 +50,63 @@ class DonateViewController: UIViewController {
         UIApplication.sharedApplication().openURL(NSURL(string: donateURL)!)
     }
     
+    @IBAction func paypal(sender: UIButton) {
+        let view = NSBundle.mainBundle().loadNibNamed("AmountView", owner: self, options: nil)[0] as! UIView
+        view.layer.cornerRadius = 4
+        
+        let mainWindow = UIApplication.sharedApplication().keyWindow
+        view.frame = CGRectMake(0, 0, mainWindow!.frame.size.width - 20, 250)
+        
+        paymentPopup = KLCPopup(contentView: view, showType: .SlideInFromTop, dismissType: .SlideOutToBottom, maskType: .Dimmed, dismissOnBackgroundTouch: true, dismissOnContentTouch: false)
+        
+        paymentPopup.show()
+    }
+    
     @IBAction func donateOverPhone(sender: UIButton) {
         UIApplication.sharedApplication().openURL(NSURL(string: "tel://" + donatePhoneNumber)!)
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    
+    @IBAction func dismissPaymentPopup(sender: AnyObject) {
+        paymentPopup.dismiss(true)
     }
-    */
+    
+    @IBAction func tappedMyPayButton() {
+        paymentPopup.dismiss(true)
+        
+        // If you haven't already, create and retain a `BTAPIClient` instance with a
+        // tokenization key OR a client token from your server.
+        // Typically, you only need to do this once per session.
+        // braintreeClient = BTAPIClient(authorization: aClientToken)
+        
+        // Create a BTDropInViewController
+        let dropInViewController = BTDropInViewController(APIClient: braintreeClient)
+        dropInViewController.delegate = self
+        
+        // This is where you might want to customize your view controller (see below)
+        
+        // The way you present your BTDropInViewController instance is up to you.
+        // In this example, we wrap it in a new, modally-presented navigation controller:
+        dropInViewController.navigationItem.leftBarButtonItem = UIBarButtonItem(
+            barButtonSystemItem: UIBarButtonSystemItem.Cancel,
+            target: self, action: "userDidCancelPayment")
+        let navigationController = UINavigationController(rootViewController: dropInViewController)
+        presentViewController(navigationController, animated: true, completion: nil)
+    }
+    
+    func userDidCancelPayment() {
+        dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    func dropInViewController(viewController: BTDropInViewController,
+         didSucceedWithTokenization paymentMethodNonce: BTPaymentMethodNonce)
+    {
+        // Send payment method nonce to your server for processing
+//        postNonceToServer(paymentMethodNonce.nonce)
+        dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    func dropInViewControllerDidCancel(viewController: BTDropInViewController) {
+        dismissViewControllerAnimated(true, completion: nil)
+    }
 
 }

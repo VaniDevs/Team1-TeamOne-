@@ -40,6 +40,7 @@
 		CE8F0A8F1C8B9623004C5A19 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8F0A8E1C8B9623004C5A19 /* RoundedButton.swift */; };
 		CE8F0A911C8B9D4D004C5A19 /* CouponView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE8F0A901C8B9D4D004C5A19 /* CouponView.xib */; };
 		CE8F0A931C8BA4E7004C5A19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE8F0A921C8BA4E7004C5A19 /* Assets.xcassets */; };
+		CE8F0A951C8BB242004C5A19 /* AmountView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE8F0A941C8BB242004C5A19 /* AmountView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +94,7 @@
 		CE8F0A8E1C8B9623004C5A19 /* RoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		CE8F0A901C8B9D4D004C5A19 /* CouponView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CouponView.xib; sourceTree = "<group>"; };
 		CE8F0A921C8BA4E7004C5A19 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CE8F0A941C8BB242004C5A19 /* AmountView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AmountView.xib; sourceTree = "<group>"; };
 		EDA8C754DDE33AF7B34E2D28 /* Pods_Food_Bank.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Food_Bank.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -132,6 +134,7 @@
 				518A95811C8B8259003E5448 /* Donate.storyboard */,
 				518A95831C8B8265003E5448 /* DonateViewController.swift */,
 				CE8F0A901C8B9D4D004C5A19 /* CouponView.xib */,
+				CE8F0A941C8BB242004C5A19 /* AmountView.xib */,
 			);
 			path = Donate;
 			sourceTree = "<group>";
@@ -404,6 +407,7 @@
 				51D55E5F1C8B54290068EDBC /* LaunchScreen.storyboard in Resources */,
 				5170E6BC1C8B759500F9CDCF /* Result.storyboard in Resources */,
 				51F0F9191C8B5999003F0398 /* Profile.storyboard in Resources */,
+				CE8F0A951C8BB242004C5A19 /* AmountView.xib in Resources */,
 				51D55E5A1C8B54290068EDBC /* Main.storyboard in Resources */,
 				CE8F0A931C8BA4E7004C5A19 /* Assets.xcassets in Resources */,
 				518A95821C8B8259003E5448 /* Donate.storyboard in Resources */,

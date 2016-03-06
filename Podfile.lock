@@ -1,6 +1,24 @@
 PODS:
   - Alamofire (3.2.1)
   - Bolts/Tasks (1.6.0)
+  - Braintree (4.2.3):
+    - Braintree/Card (= 4.2.3)
+    - Braintree/Core (= 4.2.3)
+    - Braintree/PayPal (= 4.2.3)
+    - Braintree/UI (= 4.2.3)
+  - Braintree/Card (4.2.3):
+    - Braintree/Core
+  - Braintree/Core (4.2.3)
+  - Braintree/PayPal (4.2.3):
+    - Braintree/Core
+    - Braintree/PayPalOneTouch
+  - Braintree/PayPalDataCollector (4.2.3)
+  - Braintree/PayPalOneTouch (4.2.3):
+    - Braintree/Core
+    - Braintree/PayPalDataCollector
+  - Braintree/UI (4.2.3):
+    - Braintree/Card
+    - Braintree/Core
   - KLCPopup (1.0)
   - MTBBarcodeScanner (1.9.1)
   - ObjectMapper (1.1.5)
@@ -10,6 +28,7 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire (~> 3.2)
+  - Braintree
   - KLCPopup
   - MTBBarcodeScanner (~> 1.9)
   - ObjectMapper (~> 1.1)
@@ -19,6 +38,7 @@ DEPENDENCIES:
 SPEC CHECKSUMS:
   Alamofire: f11d8624a05f5d39e0c99309b3e600a3ba64298a
   Bolts: f52a250053bb517ca874523c3913776359ab3def
+  Braintree: 05791bdc6d43c3faf2f802dd2d687e9f619f7f57
   KLCPopup: 76c5a19227977f1e53d85236f9ef42257c168d98
   MTBBarcodeScanner: d65037ab37f0932b46e11a51e98978593424d64e
   ObjectMapper: 528b1a6677a6acac7747edd508576983e76a9148
