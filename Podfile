@@ -14,6 +14,7 @@ pod 'DZNEmptyDataSet'
 pod 'KLCPopup'
 pod 'Braintree'
 pod 'RealmSwift', '~> 0.98'
+pod 'SVProgressHUD', '~> 1.1'
 end
 
 target 'Food BankTests' do

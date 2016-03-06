@@ -12,8 +12,8 @@ import CoreLocation
 
 class APIClient {
     
-    static let kAppID = "82130a63"
-    static let kAppKey = "0a9e1ebf4ce1bd6406fd46c0866470f6"
+    static let kAppID = "e80cc530"
+    static let kAppKey = "9cf5bb0ba2a11280a0c69efb546310ac"
     
     static let kGoogleAPIKey = "AIzaSyCXJV9PzUvpywut1VQvE-pn0wHjoiq1Syo"
     

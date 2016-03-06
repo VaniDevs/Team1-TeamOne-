@@ -109,15 +109,14 @@ class ResultViewController: FoodStatsTableViewController {
     }
     
     private func updateUI() {
-        print(bestStandardDeviation)
         if let matchedTopFood = matchedTopFood {
             if bestStandardDeviation > 0.7 {
                 // no match
-                imageView.image = UIImage(named: "feedback-poor")
+                imageView.image = UIImage(named: "feedback_poor")
                 matchLevelLabel.text = "Nice Try!"
-                resultButton.setTitle("Try another product", forState: .Normal)
                 matchDescriptionLabel.text = "It doesn't match our most wanted items"
                 matchProductLabel.text = nil
+                resultButton.setTitle("Try another product", forState: .Normal)
                 resultButton.addTarget(self, action: "goBack:", forControlEvents: .TouchUpInside)
             }
             else if bestStandardDeviation > 0.6 {
@@ -135,14 +134,24 @@ class ResultViewController: FoodStatsTableViewController {
                 resultButton.addTarget(self, action: "compareNutrition:", forControlEvents: .TouchUpInside)
             }
         }
+        else {
+            imageView.image = UIImage(named: "feedback_poor")
+            matchLevelLabel.text = "Nice Try!"
+            matchDescriptionLabel.text = "It doesn't match our most wanted items"
+            matchProductLabel.text = nil
+            resultButton.setTitle("Try another product", forState: .Normal)
+            resultButton.addTarget(self, action: "goBack:", forControlEvents: .TouchUpInside)
+        }
     }
     
     @IBAction func addToDonation(sender: AnyObject) {
         let realm = try! Realm()
         
         try! realm.write {
-            realm.add(self.item)
+            realm.add(self.item, update: true)
         }
+        
+        dismissViewControllerAnimated(true, completion: nil)
     }
     
     func compareNutrition(button: UIButton) {

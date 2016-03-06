@@ -12,6 +12,7 @@ class FoodStatsTableViewController: UITableViewController {
     
     var item: FoodDetail!
     
+    @IBOutlet weak var caloriesLabel: UILabel!
     @IBOutlet weak var totalFatLabel: UILabel!
     @IBOutlet weak var saturatedFatLabel: UILabel!
     @IBOutlet weak var transFatLabel: UILabel!
@@ -34,6 +35,7 @@ class FoodStatsTableViewController: UITableViewController {
     }
     
     func setupData(forItem item: FoodDetail) {
+        caloriesLabel.text = "\(item.calories) kCal"
         totalFatLabel.text = "\(item.totalFat) g"
         saturatedFatLabel.text = "\(item.saturatedFat) g"
         transFatLabel.text = "\(item.transFat) g"
