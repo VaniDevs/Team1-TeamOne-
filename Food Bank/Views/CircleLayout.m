@@ -23,7 +23,7 @@
  3. The `layoutAttributesForElementsInRect:` method returns the attributes for cells and views that are in the specified rectangle.
  */
 
-#define ITEM_SIZE 60
+#define ITEM_SIZE 76
 
 @implementation CircleLayout {
     CGSize size;

@@ -25,8 +25,10 @@ class HistoryTableViewController: UIViewController {
         
         let realm = try! Realm()
         foods = realm.objects(FoodDetail)
-        
+        self.tableView.tableFooterView = UIView()
         self.tableView.reloadData()
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .Plain, target: nil, action: nil)
+
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {

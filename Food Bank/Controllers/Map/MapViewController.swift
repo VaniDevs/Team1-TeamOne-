@@ -17,6 +17,8 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
 
     var locations = [MapPin]()
     
+    var locationManager = CLLocationManager()
+    
     let addressBook = [
         // Vancouver
         "Buy Low, 370 E Broadway, Vancouver",
@@ -79,6 +81,7 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
         )
         let span = MKCoordinateSpanMake(0.3, 0.3)
         storeLocationMapView.setRegion(MKCoordinateRegion(center: initLocation, span: span), animated: true)
+        locationManager.requestAlwaysAuthorization()
     }
     
     private func loadStoreLocations() {
