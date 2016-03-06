@@ -30,8 +30,8 @@ class ResultViewController: FoodStatsTableViewController {
         compareFood()
     }
     
-    override func setupData() {
-        super.setupData()
+    override func setupData(forItem item: FoodDetail) {
+        super.setupData(forItem: item)
         
         if let itemName = item.itemName {
             itemNameLabel.text = itemName
@@ -109,20 +109,30 @@ class ResultViewController: FoodStatsTableViewController {
     }
     
     private func updateUI() {
+        print(bestStandardDeviation)
         if let matchedTopFood = matchedTopFood {
-            if bestStandardDeviation > 0.9 {
+            if bestStandardDeviation > 0.7 {
                 // no match
-                matchLevelLabel.text = "Sorry!"
+                imageView.image = UIImage(named: "feedback-poor")
+                matchLevelLabel.text = "Nice Try!"
+                resultButton.setTitle("Try another product", forState: .Normal)
+                matchDescriptionLabel.text = "It doesn't match our most wanted items"
+                matchProductLabel.text = nil
+                resultButton.addTarget(self, action: "goBack:", forControlEvents: .TouchUpInside)
             }
-            else if bestStandardDeviation > 0.8 {
+            else if bestStandardDeviation > 0.6 {
                 // good
+                imageView.image = UIImage(named: "feedback-goodchoice")
                 matchLevelLabel.text = "Good Choice!"
                 matchProductLabel.text = matchedTopFood.desc
+                resultButton.addTarget(self, action: "compareNutrition:", forControlEvents: .TouchUpInside)
             }
             else {
                 // awesome
+                imageView.image = UIImage(named: "feedback-awesome")
                 matchLevelLabel.text = "Awesome!"
                 matchProductLabel.text = matchedTopFood.desc
+                resultButton.addTarget(self, action: "compareNutrition:", forControlEvents: .TouchUpInside)
             }
         }
     }
@@ -136,7 +146,9 @@ class ResultViewController: FoodStatsTableViewController {
     }
     
     func compareNutrition(button: UIButton) {
-        
+        button.selected = !button.selected
+        button.backgroundColor = button.selected ? UIColor(red: 12/255.0, green: 115/255.0, blue: 124/255.0, alpha: 1) : UIColor(red: 0, green: 179/255.0, blue: 194/255.0, alpha: 1)
+        super.setupData(forItem: button.selected ? matchedTopFood! : item)
     }
     
     func goBack(button: UIButton) {

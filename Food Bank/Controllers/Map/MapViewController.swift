@@ -75,9 +75,9 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
         
         let initLocation = CLLocationCoordinate2D(
             latitude: 49.25,
-            longitude: -123.12
+            longitude: -123.05
         )
-        let span = MKCoordinateSpanMake(0.5, 0.5)
+        let span = MKCoordinateSpanMake(0.3, 0.3)
         storeLocationMapView.setRegion(MKCoordinateRegion(center: initLocation, span: span), animated: true)
     }
     

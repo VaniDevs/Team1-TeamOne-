@@ -23,7 +23,7 @@ class MapTableViewCell: UITableViewCell {
         if let pin = pin {
             storeMapView.addAnnotation(pin)
             let coordinate = pin.coordinate
-            let span = MKCoordinateSpanMake(0.1, 0.1)
+            let span = MKCoordinateSpanMake(0.05, 0.05)
             storeMapView.setRegion(MKCoordinateRegion(center: coordinate, span: span), animated: true)
         }
     }
