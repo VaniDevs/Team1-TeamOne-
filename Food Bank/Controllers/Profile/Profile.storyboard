@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10083"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Profile-->
@@ -23,7 +24,7 @@
             </objects>
             <point key="canvasLocation" x="-30" y="572"/>
         </scene>
-        <!--Profile View Controller-->
+        <!--Achievement-->
         <scene sceneID="NwB-DL-e1U">
             <objects>
                 <viewController id="tlb-dk-uZf" customClass="ProfileViewController" customModule="Food_Bank" customModuleProvider="target" sceneMemberID="viewController">
@@ -34,9 +35,40 @@
                     <view key="view" contentMode="scaleToFill" id="dP8-Q2-pNq">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your food donations can feed" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S8N-TX-9KB">
+                                <rect key="frame" x="20" y="87" width="560" height="28"/>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PEOPLE FOR A DAY" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4XI-ZB-Qw6">
+                                <rect key="frame" x="20" y="198" width="560" height="18"/>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="13"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="30" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eWt-Uq-Jf4">
+                                <rect key="frame" x="20" y="115" width="560" height="89"/>
+                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="65"/>
+                                <color key="textColor" red="0.24646979570388794" green="0.68971550464630127" blue="0.7524840235710144" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="eWt-Uq-Jf4" firstAttribute="trailing" secondItem="S8N-TX-9KB" secondAttribute="trailing" id="1BK-tn-cdS"/>
+                            <constraint firstItem="eWt-Uq-Jf4" firstAttribute="leading" secondItem="S8N-TX-9KB" secondAttribute="leading" id="3PI-4v-myr"/>
+                            <constraint firstItem="4XI-ZB-Qw6" firstAttribute="trailing" secondItem="eWt-Uq-Jf4" secondAttribute="trailing" id="6YA-Rk-uaH"/>
+                            <constraint firstItem="eWt-Uq-Jf4" firstAttribute="top" secondItem="S8N-TX-9KB" secondAttribute="bottom" id="GRR-hH-iHO"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="S8N-TX-9KB" secondAttribute="leading" id="WSp-Lz-1A2"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="S8N-TX-9KB" secondAttribute="trailing" id="bSY-jU-bxo"/>
+                            <constraint firstItem="4XI-ZB-Qw6" firstAttribute="leading" secondItem="eWt-Uq-Jf4" secondAttribute="leading" id="coi-IN-JHK"/>
+                            <constraint firstItem="S8N-TX-9KB" firstAttribute="top" secondItem="VZc-FE-MMY" secondAttribute="bottom" constant="23" id="jDe-5L-r1U"/>
+                            <constraint firstItem="4XI-ZB-Qw6" firstAttribute="top" secondItem="eWt-Uq-Jf4" secondAttribute="bottom" constant="-6" id="thD-Zo-dgC"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="6co-QJ-USm"/>
+                    <navigationItem key="navigationItem" title="Achievement" id="xo0-Fl-CjO"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SQu-ub-XdA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
