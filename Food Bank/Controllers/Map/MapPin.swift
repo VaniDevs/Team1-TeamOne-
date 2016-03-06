@@ -17,8 +17,7 @@ class MapPin : NSObject, MKAnnotation, Mappable {
     var longitude: CLLocationDegrees?
     var title: String?
     var address: String?
-    var phone: String?
-    var hours: [String]?
+    var placeId: String?
     
     override init() {
         self.pinCoordinate = CLLocationCoordinate2D()
@@ -45,7 +44,6 @@ class MapPin : NSObject, MKAnnotation, Mappable {
         longitude <- map["geometry.location.lng"]
         title <- map["name"]
         address <- map["formatted_address"]
-        phone <- map["formatted_phone_number"]
-        hours <- map["opening_hours.weekday_text"]
+        placeId <- map["place_id"]
     }
 }

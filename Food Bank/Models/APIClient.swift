@@ -46,24 +46,22 @@ class APIClient {
         }
     }
     
-    class func getGooglePlaceId(addressName address: String, result: String? -> ()) {
-        let url = "https://maps.googleapis.com/maps/api/geocode/json?address=\(address)&key=\(kGoogleAPIKey)"
-        let urlWithoutSpace = url.stringByReplacingOccurrencesOfString(" ", withString: "+")
+    class func getGooglePlaceId(addressName address: String, result: [String: AnyObject]? -> ()) {
+        let urlAddress = address.stringByAddingPercentEncodingWithAllowedCharacters(NSCharacterSet.URLQueryAllowedCharacterSet())!
+        let url = "https://maps.googleapis.com/maps/api/geocode/json?address=\(urlAddress)&key=\(kGoogleAPIKey)"
         
-        Alamofire.request(.GET, urlWithoutSpace).responseJSON { response in
+        Alamofire.request(.GET, url).responseJSON { response in
             if let dict = response.result.value as? [String: AnyObject] {
-                if let items = dict["results"] as? NSArray {
-                    if let item = items[0] as? [String: AnyObject] {
-                        if let placeId = item["place_id"] as? String {
-                            result(placeId)
-                            return
-                        }
+                if let items = dict["results"] as? [[String: AnyObject]] {
+                    if let item = items.first {
+                        result(item)
+                        return
                     }
                 }
             }
         }
     }
-    
+
     class func getGooglePlaceDetails(placeId: String, result: [String: AnyObject]? -> ()) {
         let url = "https://maps.googleapis.com/maps/api/place/details/json?placeid=\(placeId)&key=\(kGoogleAPIKey)"
         
