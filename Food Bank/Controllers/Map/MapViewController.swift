@@ -15,6 +15,8 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
     
     @IBOutlet var storeLocationMapView: MKMapView!
 
+    var locations = [MapPin]()
+    
     let addressBook = [
         "Buy Low, 370 E Broadway, Vancouver",
         "Capers, 1675 Robson Street, Vancouver",
@@ -42,35 +44,23 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
     }
     
     private func loadStoreLocations() {
-        
+        storeLocationMapView.removeAnnotations(locations)
         for address in addressBook {
-            
             APIClient.getGooglePlaceId(addressName: address, result: { (result) -> () in
                 dispatch_async(dispatch_get_main_queue(), { () -> Void in
-                    if result != nil {
-                        self.getGooglePlaceDetails(result!)
+                    if let result = result {
+                        let storeLocationPin = Mapper<MapPin>().map(result)
+                        if let storeLocationPin = storeLocationPin {
+                            storeLocationPin.title = address
+                            self.storeLocationMapView.addAnnotation(storeLocationPin)
+                            self.locations.append(storeLocationPin)
+                        }
                     }
                 })
             })
         }
     }
-    
-    private func getGooglePlaceDetails(placeId: String) {
-        APIClient.getGooglePlaceDetails(placeId) { (result) -> () in
 
-            if let dict = result!["result"] {
-                do {
-                    if let theJSONData: NSData = try NSJSONSerialization.dataWithJSONObject(dict, options: .PrettyPrinted) {
-                        let theJSONString = NSString(data: theJSONData, encoding: NSASCIIStringEncoding)
-                        let storeLocationPin = Mapper<MapPin>().map(theJSONString!)
-                        self.storeLocationMapView.addAnnotation(storeLocationPin!)
-                    }
-                } catch {
-                    
-                }
-            }
-        }
-    }
     
     func mapView(mapView: MKMapView, didUpdateUserLocation userLocation: MKUserLocation) {
     }
@@ -98,11 +88,34 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
     }
     
     func mapPinDetailedButtonClicked(sender:UIButton!) {
-        let vc = storyboard?.instantiateViewControllerWithIdentifier("StoreLocationDetailTableView") as! StoreLocationDetailTableViewController
-
-        vc.storeMapPin = clickedMapPin
-        vc.userLocation = storeLocationMapView.userLocation.location
-        navigationController?.pushViewController(vc, animated: true)
+        if let placeId = clickedMapPin?.placeId {
+            APIClient.getGooglePlaceDetails(placeId) { (result) -> () in
+                if let result = result {
+                    if let dict = result["result"] as? [String: AnyObject] {
+                        if let detail = Mapper<StoreDetail>().map(dict) {
+                            
+                        }
+//                        do {
+//                            if let theJSONData: NSData = try NSJSONSerialization.dataWithJSONObject(dict, options: .PrettyPrinted) {
+//                                let theJSONString = NSString(data: theJSONData, encoding: NSASCIIStringEncoding)
+//                                
+//                            }
+//                        } catch {
+//                            
+//                        }
+//                        let vc = storyboard?.instantiateViewControllerWithIdentifier("StoreLocationDetailTableView") as! StoreLocationDetailTableViewController
+//                        
+//                        vc.storeMapPin = clickedMapPin
+//                        vc.userLocation = storeLocationMapView.userLocation.location
+//                        navigationController?.pushViewController(vc, animated: true)
+                    }
+                }
+                
+            }
+            
+            
+        }
+        
     }
     
 }

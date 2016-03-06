@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1A7D94CF8083321C122B6587 /* Pods_Food_Bank.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDA8C754DDE33AF7B34E2D28 /* Pods_Food_Bank.framework */; };
 		516B467A1C8C073B00314119 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 516B46791C8C073B00314119 /* DataStore.swift */; };
+		516B467C1C8C990F00314119 /* StoreDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 516B467B1C8C990F00314119 /* StoreDetail.swift */; };
 		5170E6B71C8B625200F9CDCF /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5170E6B61C8B625200F9CDCF /* ResultViewController.swift */; };
 		5170E6B91C8B665200F9CDCF /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5170E6B81C8B665200F9CDCF /* APIClient.swift */; };
 		5170E6BC1C8B759500F9CDCF /* Result.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5170E6BB1C8B759500F9CDCF /* Result.storyboard */; };
@@ -62,6 +63,7 @@
 /* Begin PBXFileReference section */
 		1171D189DD7B3E1D562CB476 /* Pods-Food Bank.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Food Bank.release.xcconfig"; path = "Pods/Target Support Files/Pods-Food Bank/Pods-Food Bank.release.xcconfig"; sourceTree = "<group>"; };
 		516B46791C8C073B00314119 /* DataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
+		516B467B1C8C990F00314119 /* StoreDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreDetail.swift; sourceTree = "<group>"; };
 		5170E6B61C8B625200F9CDCF /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		5170E6B81C8B665200F9CDCF /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		5170E6BB1C8B759500F9CDCF /* Result.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Result.storyboard; sourceTree = "<group>"; };
@@ -275,6 +277,7 @@
 				5170E6BD1C8B78B100F9CDCF /* FoodDetail.swift */,
 				518A95891C8B9C9F003E5448 /* SearchItem.swift */,
 				516B46791C8C073B00314119 /* DataStore.swift */,
+				516B467B1C8C990F00314119 /* StoreDetail.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -528,6 +531,7 @@
 				5691D9701C8B99B20023A62F /* DirectionTableViewCell.swift in Sources */,
 				5691D96E1C8B99A50023A62F /* MapTableViewCell.swift in Sources */,
 				5170E6BE1C8B78B100F9CDCF /* FoodDetail.swift in Sources */,
+				516B467C1C8C990F00314119 /* StoreDetail.swift in Sources */,
 				5691D9681C8B814E0023A62F /* StoreLocationDetailTableViewController.swift in Sources */,
 				5691D96B1C8B867C0023A62F /* MapViewController.swift in Sources */,
 				518A958C1C8BAB63003E5448 /* UIView+Inspectables.swift in Sources */,
