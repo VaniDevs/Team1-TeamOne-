@@ -14,6 +14,10 @@
 		5170E6BE1C8B78B100F9CDCF /* FoodDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5170E6BD1C8B78B100F9CDCF /* FoodDetail.swift */; };
 		518A95821C8B8259003E5448 /* Donate.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 518A95811C8B8259003E5448 /* Donate.storyboard */; };
 		518A95841C8B8265003E5448 /* DonateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518A95831C8B8265003E5448 /* DonateViewController.swift */; };
+		518A95881C8B9276003E5448 /* TextSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518A95871C8B9276003E5448 /* TextSearchViewController.swift */; };
+		518A958A1C8B9C9F003E5448 /* SearchItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518A95891C8B9C9F003E5448 /* SearchItem.swift */; };
+		518A958C1C8BAB63003E5448 /* UIView+Inspectables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518A958B1C8BAB63003E5448 /* UIView+Inspectables.swift */; };
+		518A958F1C8BB590003E5448 /* FoodStatsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518A958E1C8BB590003E5448 /* FoodStatsTableViewController.swift */; };
 		51D55E531C8B54290068EDBC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D55E521C8B54290068EDBC /* AppDelegate.swift */; };
 		51D55E5A1C8B54290068EDBC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51D55E581C8B54290068EDBC /* Main.storyboard */; };
 		51D55E5C1C8B54290068EDBC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51D55E5B1C8B54290068EDBC /* Assets.xcassets */; };
@@ -25,7 +29,7 @@
 		51F0F91D1C8B59A8003F0398 /* Identifier.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51F0F91C1C8B59A8003F0398 /* Identifier.storyboard */; };
 		51F0F9211C8B5B0F003F0398 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F0F9201C8B5B0F003F0398 /* HomeViewController.swift */; };
 		51F0F9271C8B5C36003F0398 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F0F9261C8B5C36003F0398 /* ProfileViewController.swift */; };
-		51F0F92B1C8B5C83003F0398 /* IdentifierViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F0F92A1C8B5C83003F0398 /* IdentifierViewController.swift */; };
+		51F0F92B1C8B5C83003F0398 /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F0F92A1C8B5C83003F0398 /* ScannerViewController.swift */; };
 		5691D9641C8B65290023A62F /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5691D9631C8B65290023A62F /* CoreLocation.framework */; };
 		5691D9661C8B6CF10023A62F /* MapPin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5691D9651C8B6CF10023A62F /* MapPin.swift */; };
 		5691D9681C8B814E0023A62F /* StoreLocationDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5691D9671C8B814E0023A62F /* StoreLocationDetailTableViewController.swift */; };
@@ -54,6 +58,10 @@
 		5170E6BD1C8B78B100F9CDCF /* FoodDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodDetail.swift; sourceTree = "<group>"; };
 		518A95811C8B8259003E5448 /* Donate.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Donate.storyboard; sourceTree = "<group>"; };
 		518A95831C8B8265003E5448 /* DonateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DonateViewController.swift; sourceTree = "<group>"; };
+		518A95871C8B9276003E5448 /* TextSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextSearchViewController.swift; sourceTree = "<group>"; };
+		518A95891C8B9C9F003E5448 /* SearchItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchItem.swift; sourceTree = "<group>"; };
+		518A958B1C8BAB63003E5448 /* UIView+Inspectables.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Inspectables.swift"; sourceTree = "<group>"; };
+		518A958E1C8BB590003E5448 /* FoodStatsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodStatsTableViewController.swift; sourceTree = "<group>"; };
 		51D55E4F1C8B54290068EDBC /* Food Bank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Food Bank.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		51D55E521C8B54290068EDBC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		51D55E591C8B54290068EDBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -70,7 +78,7 @@
 		51F0F9201C8B5B0F003F0398 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		51F0F9241C8B5C2C003F0398 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		51F0F9261C8B5C36003F0398 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
-		51F0F92A1C8B5C83003F0398 /* IdentifierViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IdentifierViewController.swift; sourceTree = "<group>"; };
+		51F0F92A1C8B5C83003F0398 /* ScannerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScannerViewController.swift; sourceTree = "<group>"; };
 		5691D9631C8B65290023A62F /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		5691D9651C8B6CF10023A62F /* MapPin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapPin.swift; sourceTree = "<group>"; };
 		5691D9671C8B814E0023A62F /* StoreLocationDetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreLocationDetailTableViewController.swift; sourceTree = "<group>"; };
@@ -121,6 +129,14 @@
 				518A95831C8B8265003E5448 /* DonateViewController.swift */,
 			);
 			path = Donate;
+			sourceTree = "<group>";
+		};
+		518A958D1C8BB556003E5448 /* FoodStats */ = {
+			isa = PBXGroup;
+			children = (
+				518A958E1C8BB590003E5448 /* FoodStatsTableViewController.swift */,
+			);
+			path = FoodStats;
 			sourceTree = "<group>";
 		};
 		51D55E461C8B54290068EDBC = {
@@ -176,6 +192,7 @@
 				51D55E781C8B55C20068EDBC /* Map */,
 				518A95801C8B8231003E5448 /* Donate */,
 				51D55E791C8B55C20068EDBC /* Profile */,
+				518A958D1C8BB556003E5448 /* FoodStats */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -194,7 +211,8 @@
 			children = (
 				5170E6B51C8B624600F9CDCF /* Result */,
 				51F0F91C1C8B59A8003F0398 /* Identifier.storyboard */,
-				51F0F92A1C8B5C83003F0398 /* IdentifierViewController.swift */,
+				51F0F92A1C8B5C83003F0398 /* ScannerViewController.swift */,
+				518A95871C8B9276003E5448 /* TextSearchViewController.swift */,
 			);
 			path = Identifier;
 			sourceTree = "<group>";
@@ -222,6 +240,7 @@
 		51D55E7A1C8B55C20068EDBC /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				518A958B1C8BAB63003E5448 /* UIView+Inspectables.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -231,6 +250,7 @@
 			children = (
 				5170E6B81C8B665200F9CDCF /* APIClient.swift */,
 				5170E6BD1C8B78B100F9CDCF /* FoodDetail.swift */,
+				518A95891C8B9C9F003E5448 /* SearchItem.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -335,7 +355,7 @@
 				TargetAttributes = {
 					51D55E4E1C8B54290068EDBC = {
 						CreatedOnToolsVersion = 7.2.1;
-						DevelopmentTeam = 2H2K7AG9Y2;
+						DevelopmentTeam = HWAPNMZU3Y;
 						SystemCapabilities = {
 							com.apple.Maps.iOS = {
 								enabled = 0;
@@ -449,12 +469,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				518A958A1C8B9C9F003E5448 /* SearchItem.swift in Sources */,
 				51D55E531C8B54290068EDBC /* AppDelegate.swift in Sources */,
 				518A95841C8B8265003E5448 /* DonateViewController.swift in Sources */,
-				51F0F92B1C8B5C83003F0398 /* IdentifierViewController.swift in Sources */,
+				518A958F1C8BB590003E5448 /* FoodStatsTableViewController.swift in Sources */,
+				51F0F92B1C8B5C83003F0398 /* ScannerViewController.swift in Sources */,
 				5170E6B71C8B625200F9CDCF /* ResultViewController.swift in Sources */,
 				5170E6B91C8B665200F9CDCF /* APIClient.swift in Sources */,
 				5691D9661C8B6CF10023A62F /* MapPin.swift in Sources */,
+				518A95881C8B9276003E5448 /* TextSearchViewController.swift in Sources */,
 				CE8F0A8A1C8B7189004C5A19 /* CircularImageCell.swift in Sources */,
 				CE8F0A841C8B6B99004C5A19 /* CircleLayout.m in Sources */,
 				CE8F0A7F1C8B6726004C5A19 /* CircularImageView.swift in Sources */,
@@ -463,6 +486,7 @@
 				5170E6BE1C8B78B100F9CDCF /* FoodDetail.swift in Sources */,
 				5691D9681C8B814E0023A62F /* StoreLocationDetailTableViewController.swift in Sources */,
 				5691D96B1C8B867C0023A62F /* MapViewController.swift in Sources */,
+				518A958C1C8BAB63003E5448 /* UIView+Inspectables.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,8 +8,9 @@
 
 import UIKit
 import MTBBarcodeScanner
+import ObjectMapper
 
-class IdentifierViewController: UIViewController {
+class ScannerViewController: UIViewController {
 
     var scanner: MTBBarcodeScanner!
     
@@ -17,6 +18,8 @@ class IdentifierViewController: UIViewController {
         super.viewDidLoad()
 
         scanner = MTBBarcodeScanner(previewView: view)
+        
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Cancel", style: .Plain, target: self, action: "cancelAction:")
 
     }
 
@@ -34,7 +37,7 @@ class IdentifierViewController: UIViewController {
                             if let result = result {
                                 print(result)
                                 let vc = UIStoryboard(name: "Result", bundle: nil).instantiateInitialViewController() as! ResultViewController
-                                vc.result = result
+                                vc.item = Mapper<FoodDetail>().map(result)
                                 self.navigationController?.pushViewController(vc, animated: true)
                             }
                             else {
@@ -53,5 +56,9 @@ class IdentifierViewController: UIViewController {
         super.viewWillDisappear(animated)
         
         scanner.stopScanning()
+    }
+    
+    func cancelAction(sender: AnyObject) {
+        dismissViewControllerAnimated(true, completion: nil)
     }
 }

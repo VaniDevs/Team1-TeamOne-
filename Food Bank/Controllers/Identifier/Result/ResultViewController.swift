@@ -7,16 +7,26 @@
 //
 
 import UIKit
+import ObjectMapper
 
-class ResultViewController: UIViewController {
-
-    var result: NSDictionary!
+class ResultViewController: FoodStatsTableViewController {
     
-    @IBOutlet weak var resultLabel: UILabel!
+    @IBOutlet weak var itemNameLabel: UILabel!
+    @IBOutlet weak var itemBrandLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        resultLabel.text = "\(result)"
+    }
+    
+    override func setupData() {
+        super.setupData()
+        
+        if let itemName = item.itemName {
+            itemNameLabel.text = itemName
+        }
+        if let brandName = item.brandName {
+            itemBrandLabel.text = brandName
+        }
     }
 }
