@@ -64,7 +64,7 @@ class APIClient {
         }
     }
     
-    class func getGooglePlaceDetails(placeId: String, result: AnyObject? -> ()) {
+    class func getGooglePlaceDetails(placeId: String, result: [String: AnyObject]? -> ()) {
         let url = "https://maps.googleapis.com/maps/api/place/details/json?placeid=\(placeId)&key=\(kGoogleAPIKey)"
         
         Alamofire.request(.GET, url).responseJSON { response in

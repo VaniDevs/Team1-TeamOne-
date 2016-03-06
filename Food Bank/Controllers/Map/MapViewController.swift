@@ -60,7 +60,7 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
 
             if let dict = result!["result"] {
                 do {
-                    if let theJSONData: NSData = try NSJSONSerialization.dataWithJSONObject(dict!, options: .PrettyPrinted) {
+                    if let theJSONData: NSData = try NSJSONSerialization.dataWithJSONObject(dict, options: .PrettyPrinted) {
                         let theJSONString = NSString(data: theJSONData, encoding: NSASCIIStringEncoding)
                         let storeLocationPin = Mapper<MapPin>().map(theJSONString!)
                         self.storeLocationMapView.addAnnotation(storeLocationPin!)
