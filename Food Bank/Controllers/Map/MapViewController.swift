@@ -122,34 +122,35 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
         clickedMapPin = view.annotation as? MapPin
     }
     
-    func mapPinDetailedButtonClicked(sender:UIButton!) {
-        if let placeId = clickedMapPin?.placeId {
+    func mapPinDetailedButtonClicked(sender:UIButton!) {let vc = self.storyboard?.instantiateViewControllerWithIdentifier("StoreLocationDetailTableView") as! StoreLocationDetailTableViewController
+        
+        vc.storeMapPin = storeLocationMapView.selectedAnnotations.first as! MapPin
+        vc.userLocation = self.storeLocationMapView.userLocation.location
+        self.navigationController?.pushViewController(vc, animated: true)
+        
+        /*if let placeId = clickedMapPin?.placeId {
             APIClient.getGooglePlaceDetails(placeId) { (result) -> () in
                 if let result = result {
                     if let dict = result["result"] as? [String: AnyObject] {
-                        if let detail = Mapper<StoreDetail>().map(dict) {
+                        do {
+                            if let theJSONData: NSData = try NSJSONSerialization.dataWithJSONObject(dict, options: .PrettyPrinted) {
+                                let theJSONString = NSString(data: theJSONData, encoding: NSASCIIStringEncoding)
+                                if let mapPin = Mapper<StoreDetail>().map(theJSONString) {
+                                    
+                                    let vc = self.storyboard?.instantiateViewControllerWithIdentifier("StoreLocationDetailTableView") as! StoreLocationDetailTableViewController
+                                    
+                                    vc.storeMapPin = mapPin
+                                    vc.userLocation = self.storeLocationMapView.userLocation.location
+                                    self.navigationController?.pushViewController(vc, animated: true)
+                                }
+                            }
+                        } catch {
                             
                         }
-//                        do {
-//                            if let theJSONData: NSData = try NSJSONSerialization.dataWithJSONObject(dict, options: .PrettyPrinted) {
-//                                let theJSONString = NSString(data: theJSONData, encoding: NSASCIIStringEncoding)
-//                                
-//                            }
-//                        } catch {
-//                            
-//                        }
-//                        let vc = storyboard?.instantiateViewControllerWithIdentifier("StoreLocationDetailTableView") as! StoreLocationDetailTableViewController
-//                        
-//                        vc.storeMapPin = clickedMapPin
-//                        vc.userLocation = storeLocationMapView.userLocation.location
-//                        navigationController?.pushViewController(vc, animated: true)
                     }
                 }
-                
             }
-            
-            
-        }
+        }*/
         
     }
     
