@@ -30,6 +30,7 @@ class FoodDetail: Object, Mappable {
     dynamic var calcium: Float = 0
     dynamic var iron: Float = 0
     dynamic var ingredient: String?
+    dynamic var servingsPerContainer: Int = 0
     
     required convenience init?(_ map: Map) {
         self.init()
@@ -55,6 +56,7 @@ class FoodDetail: Object, Mappable {
         calcium <- map["nf_calcium_dv"]
         iron <- map["nf_iron_dv"]
         ingredient <- map["nf_ingredient_statement"]
+        servingsPerContainer <- map["nf_servings_per_container"]
     }
     
     override static func primaryKey() -> String {
