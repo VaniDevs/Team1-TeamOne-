@@ -193,6 +193,7 @@
                         <outlet property="collectionView" destination="Wa6-eA-3us" id="Bqy-Iz-Ruk"/>
                         <outlet property="textSearch" destination="Inh-Dr-FNF" id="d5d-Vh-mdB"/>
                         <outlet property="top10" destination="NbW-Nd-rLU" id="Rth-h5-o5v"/>
+                        <segue destination="wze-ms-baL" kind="show" identifier="showTopFoodStat" id="9Nq-FW-0Gx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K99-T2-pNU" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -234,6 +235,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cTa-gn-hqj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1263" y="958"/>
+        </scene>
+        <!--TopFoodStats-->
+        <scene sceneID="TiP-wv-koX">
+            <objects>
+                <viewControllerPlaceholder storyboardName="TopFoodStats" id="wze-ms-baL" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hla-cE-XGV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="128" y="8"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Okd-1R-WiU">
