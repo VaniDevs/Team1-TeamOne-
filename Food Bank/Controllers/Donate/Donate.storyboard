@@ -9,6 +9,8 @@
         <scene sceneID="qty-p9-Xym">
             <objects>
                 <navigationController title="Donate" id="HLY-Vm-gra" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Donate" image="donate_0" selectedImage="donate_1" id="RZU-EU-Gad"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="qCF-QD-7dE">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -33,7 +35,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tGc-Gl-2It">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tGc-Gl-2It">
                                 <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jvq-u0-yv9">
@@ -207,4 +209,8 @@
             <point key="canvasLocation" x="-213" y="181"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="donate_0" width="27" height="26"/>
+        <image name="donate_1" width="27" height="26"/>
+    </resources>
 </document>

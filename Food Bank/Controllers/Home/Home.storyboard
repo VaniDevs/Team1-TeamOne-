@@ -11,7 +11,7 @@
         <scene sceneID="C0R-OL-zTe">
             <objects>
                 <navigationController title="Healthy Food Identifier" id="09A-73-x5S" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Identifier" id="Gha-et-MpO"/>
+                    <tabBarItem key="tabBarItem" title="Identifier" image="id_0" selectedImage="id_1" id="Gha-et-MpO"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="WQu-DR-hTs">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -254,6 +254,8 @@
     </scenes>
     <resources>
         <image name="barcode" width="124" height="58"/>
+        <image name="id_0" width="21" height="20"/>
+        <image name="id_1" width="21" height="21"/>
         <image name="text_search" width="144" height="57"/>
         <image name="top10" width="191" height="132"/>
     </resources>
